@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,500&family=Roboto:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,500&family=Roboto:wght@100;300;400;700&display=swap');
 
 *,
 *::after,
@@ -33,6 +33,16 @@ body {
   padding: 10px;
 }
 
+.header.active {
+  background-color: rgba(96, 112, 255, 0.8);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+
 .hamburger-menu {
   width: 25px;
 }
@@ -55,12 +65,12 @@ body {
 
 .hamburger-menu.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
-  background-color: #6070ff;
+  background-color: #fff;
 }
 
 .hamburger-menu.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
-  background-color: #6070ff;
+  background-color: #fff;
 }
 
 .nav-list {
@@ -89,12 +99,12 @@ a {
 }
 
 .list-item a {
-  color: blue;
+  color: #fff;
   font-weight: 500;
 }
 
 .list-item a:hover {
-  color: #303030;
+  color: #344563;
   font-weight: 600;
 }
 
@@ -124,6 +134,76 @@ a {
   font-weight: bold;
   color: blue;
   font-size: 1.3rem;
+}
+
+/* ***************** Header top Introduction * ***************** */
+main {
+  padding-top: 50px;
+}
+
+.top-body {
+  display: grid;
+  gap: 10px;
+  padding: 0 0 10px;
+}
+
+.social-handler {
+  grid-row: 1;
+}
+
+.avatar {
+  grid-row: 1;
+  text-align: center;
+}
+
+.social-list {
+  list-style-type: none;
+  padding: 10px;
+  display: block;
+  margin-left: 20%;
+}
+
+.social-item {
+  display: flex;
+  padding: 5px;
+}
+
+.social-item img:hover {
+  filter: sepia(100%) hue-rotate(190deg) saturate(500%);
+}
+
+.myphoto {
+  width: 230px;
+  border-radius: 0 50% 50% 50%;
+  margin-right: 20px;
+}
+
+.intro {
+  grid-column: 1/ span 2;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.primary-text {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  padding: 1rem 0 10px;
+}
+
+.primary-text-desk {
+  display: none;
+}
+
+.paragraph {
+  color: #344563;
+  line-height: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  width: 95%;
 }
 
 @media only screen and (min-width: 730px) {
@@ -157,11 +237,53 @@ a {
     display: block;
   }
 
+  .list-item a {
+    color: blue;
+  }
+
   .brand {
     margin-left: 50px;
   }
 
   .name {
     font-size: 1.5rem;
+  }
+
+  /* ***************** Header top Introduction * ***************** */
+
+  .top-body {
+    display: grid;
+    width: 100%;
+  }
+
+  .social-handler {
+    margin-left: 50px;
+  }
+
+  .primary-text {
+    display: none;
+  }
+
+  .primary-text-desk {
+    display: block;
+    font-size: 48px;
+    line-height: 60px;
+    color: #091e42;
+    height: 122px;
+    letter-spacing: 0.37px;
+  }
+
+  .intro {
+    line-height: 28px;
+    font-size: 20px;
+    margin: 12px 0;
+    width: 88%;
+    grid-area: c;
+    align-items: center;
+    flex: none;
+  }
+
+  .paragraph {
+    width: 60%;
   }
 }

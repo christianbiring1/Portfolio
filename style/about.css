@@ -130,7 +130,7 @@
   content: "";
   position: absolute;
   width: 95%;
-  border-bottom: 1px solid #dfe1e6;
+  border-bottom: 1px solid #c5c5c5;
   top: 30px;
   left: 5px;
 }
@@ -219,6 +219,10 @@ img[alt="bootstrap-logo"] {
   .stack-list {
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+
+  .stack-item {
+    padding: 15px 0;
   }
 /* ************* Stacks in the language, frameworks *********** */
   .languages.active,

@@ -123,12 +123,13 @@
 .stack-top {
   position: relative;
   display: flex;
+  justify-content: space-between;
 }
 
 .stack-top::after {
   content: "";
   position: absolute;
-  width: 80%;
+  width: 95%;
   border-bottom: 1px solid #dfe1e6;
   top: 30px;
   left: 5px;
@@ -138,7 +139,45 @@
   width: 60px;
 }
 
-img[alt="js-logo"],
 img[alt="bootstrap-logo"] {
   border-radius: 50%;
+}
+/* ***************** INTERACTION ON THE LANGUAGES, FRAMEWORKS ***************** */
+
+.next,
+.down-arrow.active {
+  width: 30px;
+  filter: brightness(50%) grayscale(50%) opacity(50%);
+  display: inline;
+}
+
+.down-arrow {
+  display: none;
+}
+
+.next.active {
+  display: none;
+}
+
+.languages,
+.frameworks,
+.tools,
+.skillset {
+  display: none;
+}
+
+.languages.active,
+.frameworks.active,
+.tools.active,
+.skillset.active {
+  display: block;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  width: 90%;
+  padding-top: 15px;
 }

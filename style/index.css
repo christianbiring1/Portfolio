@@ -124,6 +124,7 @@ a {
 
 .bright-mode.active {
   display: block;
+  filter: invert(1);
 }
 
 .night-mode {

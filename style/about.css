@@ -135,6 +135,11 @@
   left: 5px;
 }
 
+.stack-top h3 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
 .language img {
   width: 60px;
 }
@@ -149,6 +154,11 @@ img[alt="bootstrap-logo"] {
   width: 30px;
   filter: brightness(50%) grayscale(50%) opacity(50%);
   display: inline;
+}
+
+.next:hover,
+.down-arrow.active:hover {
+  cursor: pointer;
 }
 
 .down-arrow {
@@ -180,4 +190,18 @@ img[alt="bootstrap-logo"] {
   gap: 5px;
   width: 90%;
   padding-top: 15px;
+}
+
+.language span {
+  font-weight: 500;
+}
+
+.skillset-list {
+  padding: 20px;
+  font-weight: 500;
+}
+
+.skillset-item {
+  margin: 10px;
+  padding: 3px;
 }

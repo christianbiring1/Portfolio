@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -24,6 +28,10 @@ body {
   background-color: rgb(210, 210, 240);
   border-radius: 10px;
   border-bottom-left-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 255, .5);
 }
 
 /* ***************** Mobile menu ************************** */
@@ -166,7 +174,7 @@ main {
 
 .social-item {
   display: flex;
-  padding: 5px;
+  padding: 5px 10px;
 }
 
 .social-item img:hover {

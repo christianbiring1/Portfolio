@@ -1,2 +1,144 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,500&family=Roboto:wght@100;300;400;700&display=swap');
 
+#about {
+  padding: 100px 10px 20px;
+}
+
+#about h2 {
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  margin-bottom: 12px;
+}
+
+#about p {
+  color: #344563;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.standout {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.resume {
+  text-decoration: none;
+  font-family: 'Montserrat';
+  border: 1px solid #6070ff;
+  border-radius: 10px;
+  padding: 0.6em;
+  display: inline-block;
+  margin: 15px 0;
+  animation: wiggle 2s linear infinite;
+}
+
+.resume:hover {
+  color: #fff;
+  background: #6070ff;
+  box-shadow: 0 8px 16px #4053fc3d;
+}
+
+.resume:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+.resume:disabled {
+  color: #5e6c84;
+  background: #fff;
+  border-color: #5e6c84;
+}
+
+.resume a {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #396df2;
+}
+
+.resume a:hover {
+  color: #fff;
+}
+
+@keyframes wiggle {
+
+  0%,
+  7% {
+    transform: rotate(0);
+  }
+
+  15% {
+    transform: rotateZ(-15deg);
+  }
+
+  20% {
+    transform: rotateZ(10deg);
+  }
+
+  25% {
+    transform: rotateZ(-10deg);
+  }
+
+  30% {
+    transform: rotateZ(6deg);
+  }
+
+  35% {
+    transform: rotateZ(-4deg);
+  }
+
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+.connect {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #2230d2;
+  padding: 15px 0;
+}
+
+.social {
+  display: flex;
+  padding: 0;
+}
+
+.stack {
+  margin-top: 20px;
+}
+
+.stack-list {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+
+.stack-top {
+  position: relative;
+  display: flex;
+}
+
+.stack-top::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  border-bottom: 1px solid #dfe1e6;
+  top: 30px;
+  left: 5px;
+}
+
+.language img {
+  width: 60px;
+}
+
+img[alt="js-logo"],
+img[alt="bootstrap-logo"] {
+  border-radius: 50%;
+}

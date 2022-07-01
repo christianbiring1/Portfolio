@@ -37,3 +37,19 @@ form.addEventListener('submit', (e) => {
 });
 
 /* ********************** PRESERVE USER INPUTS IN THE LOCAL STORAGE ************************** */
+
+form.addEventListener('input', () => {
+  const data = {
+    name: userName.value,
+    email: userEmail.value,
+    message: message.value,
+  };
+  localStorage.setItem('userInput', JSON.stringify(data));
+});
+
+window.addEventListener('load', () => {
+  const userInput = JSON.parse(localStorage.getItem('userInput'));
+  userName.value = userInput.name;
+  userEmail.value = userInput.email;
+  message.value = userInput.message;
+});

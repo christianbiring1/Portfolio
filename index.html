@@ -272,6 +272,7 @@
             maxlength="30"
             placeholder="Enter your name"
             required
+            oninvalid="this.setCustomValidity('')"
           /><br />
           <input
             type="email"
@@ -279,13 +280,14 @@
             name="email"
             placeholder="Enter you email"
             required
+            oninvalid="this.setCustomValidity('')"
           /><br />
           <textarea
             name="message"
             id="message"
             maxlength="500"
-            placeholder="Write your message here"
             required
+            placeholder="Write your message here"
           ></textarea
           ><br />
           <button type="submit">Get in touch</button>
@@ -294,5 +296,6 @@
       </div>
     </main>
     <script type="module" src="index.js"></script>
+    <script src="form.js"></script>
   </body>
 </html>

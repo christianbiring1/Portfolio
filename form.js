@@ -48,8 +48,10 @@ form.addEventListener('input', () => {
 });
 
 window.addEventListener('load', () => {
-  const userInput = JSON.parse(localStorage.getItem('userInput'));
-  userName.value = userInput.name;
-  userEmail.value = userInput.email;
-  message.value = userInput.message;
+  if (localStorage.length > 0) {
+    const userInput = JSON.parse(localStorage.getItem('userInput'));
+    userName.value = userInput.name;
+    userEmail.value = userInput.email;
+    message.value = userInput.message;
+  }
 });

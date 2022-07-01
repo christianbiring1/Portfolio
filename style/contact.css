@@ -118,6 +118,10 @@ textarea:focus {
       transform: translateX(-20px);
     }
 
+    #contact {
+      border-top-left-radius: 200px;
+    }
+
     #form {
       width: 447px;
       margin: 0 auto;

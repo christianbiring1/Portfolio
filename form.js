@@ -4,6 +4,7 @@ const userEmail = document.querySelector('#email');
 const message = document.querySelector('#message');
 const warning = document.querySelector('.error');
 
+/* ***************************** FORM VALIDATION ******************************** */
 form.addEventListener('submit', (e) => {
   const user = userName.value;
   const email = userEmail.value;
@@ -34,3 +35,5 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
   }
 });
+
+/* ********************** PRESERVE USER INPUTS IN THE LOCAL STORAGE ************************** */

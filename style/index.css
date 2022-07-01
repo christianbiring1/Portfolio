@@ -13,6 +13,7 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: #c1c7d033;
 }
 
 ::-webkit-scrollbar {
@@ -20,12 +21,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  width: 15px;
   box-shadow: inset 10px 10px 10px transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(210, 210, 240);
+  background-color: rgb(154, 154, 156);
   border-radius: 10px;
   border-bottom-left-radius: 15px;
 }

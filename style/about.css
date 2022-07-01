@@ -230,7 +230,7 @@ img[alt="bootstrap-logo"] {
   .frameworks.active,
   .tools.active {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 20%;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 80%;
     padding: 20px;
   }
@@ -257,5 +257,11 @@ img[alt="bootstrap-logo"] {
 @media only screen and (min-width: 1200px){
   .skillset-list {
     grid-template-columns: repeat(3, auto);
-  } 
+  }
+
+    .languages.active,
+    .frameworks.active,
+    .tools.active {
+      grid-template-columns: 1fr 1fr 1fr 20%;
+    }
 }

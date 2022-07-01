@@ -16,11 +16,11 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  width: 20px;
+  width: 15px;
   box-shadow: inset 10px 10px 10px transparent;
 }
 

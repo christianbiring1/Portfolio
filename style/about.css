@@ -245,11 +245,17 @@ img[alt="bootstrap-logo"] {
   .skillset-list {
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
   }
 
   .skillset-item {
     margin: 10px;
     padding: 0;
   }
+}
+
+@media only screen and (min-width: 1200px){
+  .skillset-list {
+    grid-template-columns: repeat(3, auto);
+  } 
 }

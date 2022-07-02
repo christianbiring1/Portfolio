@@ -26,7 +26,7 @@
 .project-list {
   padding: 10px;
   list-style-type: none;
-  background-color: red;
+  /* background-color: red; */
   border: 1px solid;
   border-radius: 15px;
 }
@@ -47,20 +47,53 @@
   display: inline-block;
   margin-top: 8px;
   padding: 0.2rem 0.3rem;
-  background-color: blue;
+  background-color: #6070ff;
   border-radius: 12px;
 }
 
+.see-project {
+  text-decoration: none;
+  font-family: 'Montserrat';
+  border: 1px solid #6070ff;
+  border-radius: 10px;
+  padding: 0.6em;
+  display: inline-block;
+  margin: 15px 0;
+}
+
+.see-project:hover {
+  color: #fff;
+  background: #6070ff;
+  box-shadow: 0 8px 16px #4053fc3d;
+}
+
+.see-project:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+.see-project a:hover {
+  color: #fff;
+}
+
+.see-project a {
+  font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #396df2;
+}
+
 .project-container button {
-  border: none;
+  /* border: none; */
   outline: none;
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
   cursor: pointer;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 button .arrow {
-  border: solid #fff;
+  border: solid #2230d2;
   border-width: 0 4px 4px 0;
   display: inline-block;
   padding: 10px;

@@ -16,7 +16,7 @@ projects.forEach((project) => {
                     <p>${project.projectDescription}</p>
                     <ul class="technologies-list ${project.class}">
                     </ul>
-                    <button>
+                    <button class="see-project">
                     <a href="${project.liveDemo}">See Project</a>
                     </button>
                   <div>`;

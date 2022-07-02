@@ -3,6 +3,8 @@ import projects from './list.js';
 const rightBtn = document.getElementById('right-btn');
 const leftBtn = document.getElementById('left-btn');
 
+/* **************************** RENDER PROJECTS SECTION DYNAMICALLY ************************** */
+
 const projectWrapper = document.querySelector('.project-list');
 projects.forEach((project) => {
   const li = document.createElement('li');
@@ -19,8 +21,11 @@ projects.forEach((project) => {
   projectWrapper.appendChild(li);
 });
 
+/* ********************* POPULATE THE PROJECT STACKS (TECHNOLOGIES) ************************ */
+
 const techList = document.querySelectorAll('.technologies-list');
 
+// Identifier or id of the project li
 const identifier = [];
 let i = 0;
 projects.forEach((project) => {
@@ -41,34 +46,39 @@ projects.forEach((project) => {
   });
 });
 
-projectWrapper.id = 1;
-const index = identifier.length - 1;
+/* ***************** ALGORITHM FOR THE CAROUSSEL ON THE PROJECT LIST **************** */
 
 const projectItem = document.querySelectorAll('.project-item');
-let fit = 0;
+projectWrapper.id = 1;
+const index = identifier.length - 1;
+let position = 0;
+
+// FOR MOBING THE PROJECT LIST ON THE RIGHT
 
 projectItem[0].classList.toggle('active');
 const moveRight = () => {
-  if (fit >= identifier.length - 1) {
+  if (position >= identifier.length - 1) {
     projectItem[0].classList.toggle('active');
     projectItem[index].classList.remove('active');
-    fit = 0;
+    position = 0;
   } else {
-    projectItem[fit].classList.remove('active');
-    projectItem[fit + 1].classList.toggle('active');
-    fit += 1;
+    projectItem[position].classList.remove('active');
+    projectItem[position + 1].classList.toggle('active');
+    position += 1;
   }
 };
 
+// FOR MOBING THE PROJECT LIST ON THE LEFT
+
 const moveLeft = () => {
-  if (fit < 1) {
-    projectItem[fit].classList.toggle('active');
-    fit = identifier.length - 1;
-    projectItem[fit].classList.toggle('active');
+  if (position < 1) {
+    projectItem[position].classList.toggle('active');
+    position = identifier.length - 1;
+    projectItem[position].classList.toggle('active');
   } else {
-    projectItem[fit - 1].classList.toggle('active');
-    projectItem[fit].classList.remove('active');
-    fit -= 1;
+    projectItem[position - 1].classList.toggle('active');
+    projectItem[position].classList.remove('active');
+    position -= 1;
   }
 };
 

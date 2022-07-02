@@ -2,9 +2,7 @@ import projects from './list.js';
 
 const rightBtn = document.getElementById('right-btn');
 const leftBtn = document.getElementById('left-btn');
-const projectContainer = document.querySelector('.container');
 
-console.log(projectContainer);
 const projectWrapper = document.querySelector('.project-list');
 projects.forEach((project) => {
   const li = document.createElement('li');
@@ -16,9 +14,7 @@ projects.forEach((project) => {
                     <p>${project.projectDescription}</p>
                     <ul class="technologies-list ${project.class}">
                     </ul>
-                    <button class="see-project">
-                    <a href="${project.liveDemo}">See Project</a>
-                    </button>
+                    <button class="see-project">See Project</button>
                   <div>`;
   projectWrapper.appendChild(li);
 });

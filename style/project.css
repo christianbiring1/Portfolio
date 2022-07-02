@@ -47,7 +47,7 @@
   display: inline-block;
   margin-top: 8px;
   padding: 0.2rem 0.3rem;
-  background-color: #6070ff;
+  background-color: hwb(235 64% 13%);
   border-radius: 12px;
 }
 
@@ -59,6 +59,11 @@
   padding: 0.6em;
   display: inline-block;
   margin: 15px 0;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #396df2;
+  letter-spacing: 0.05em;
 }
 
 .see-project:hover {
@@ -70,18 +75,6 @@
 .see-project:active {
   background: #2230d2;
   color: #fff;
-}
-
-.see-project a:hover {
-  color: #fff;
-}
-
-.see-project a {
-  font-weight: 500;
-    font-size: 17px;
-    line-height: 24px;
-    letter-spacing: 0.05em;
-    color: #396df2;
 }
 
 .move {

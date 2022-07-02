@@ -8,93 +8,111 @@ const pictures = ['https://images.unsplash.com/photo-1537000092872-06bbf7b64f60?
 const projects = [
   {
     image: './images/Covid-App.png',
-    class: '',
+    id: 1,
     projectName: 'Covid-19 App',
-    stack: ['HTML5', 'CSS3', 'React', 'Redux', 'API'],
+    stack: ['HTML5', 'CSS3', 'React', 'Redux', 'Covid API'],
     projectDescription: '',
     liveDemo: '',
     sourceCode: '',
+    class: 'covidApp',
   },
 
   {
     image: './images/bookstore-react.png',
-    class: '',
+    id: 2,
     projectName: 'BookStore',
     stack: ['HTML5', 'CSS3', 'React', 'Redux', 'API'],
     projectDescription: '',
     liveDemo: '',
     sourceCode: '',
+    class: 'bookstore',
   },
 
   {
     image: './images/chris-math-magician.png',
-    class: '',
+    id: 3,
     projectName: 'Math magician',
     stack: ['HTML5', 'CSS3', 'React'],
     projectDescription: '',
     liveDemo: '',
     sourceCode: '',
+    class: 'mathmagician',
   },
 
   {
     image: './images/movieposter.png',
-    class: '',
+    id: 4,
     projectName: 'Movie poster',
     stack: ['HTML5', 'CSS3', 'JavaScript', 'TVMaze API'],
     projectDescription: '',
     liveDemo: '',
     sourceCode: '',
+    class: 'movie',
   },
+
   {
     image: './images/leader-board.png',
-    class: '',
+    id: 5,
     projectName: 'Leader board',
     stack: ['HTML5', 'CSS3', 'JavaScript', 'API'],
     projectDescription: '',
     liveDemo: '',
     sourceCode: '',
+    class: 'leaderboard',
   },
 
   {
-    image: './images/To-Do_list_ (1).png',
-    class: '',
+    image: './images/To-Do_list.png',
+    id: 6,
     projectName: 'To Do list',
-    stack: ['HTML5', 'CSS3', 'JavaScript', 'localStorage'],
+    stack: ['HTML5', 'CSS3', 'JavaScript', 'LocalStorage'],
     projectDescription: '',
     liveDemo: '',
     sourceCode: '',
+    class: 'todolist',
   },
 
   {
     image: './images/Genuine-charity.png',
-    class: '',
+    id: 7,
     projectName: 'Genuine Charity',
     stack: ['HTML5', 'CSS3', 'JavaScript'],
     projectDescription: '',
     liveDemo: '',
     sourceCode: '',
+    class: 'genuineCharity',
   },
 ];
 
-// console.log(projectContainer);
-
-const list = document.querySelector('.project-list');
+console.log(projectContainer);
+const projectWrapper = document.querySelector('.project-list');
 projects.forEach((project) => {
-  list.innerHTML = `<li class="project-list">
-                      <img src= "${project.image}" alt="${project.name}-screenshot" class="projet">
-                      <div>
-                        <h2>${project.projectName}</h2>
-                        <div>
-                        <p>${project.projectDescription}</p>
-                        <ul>
-                        </ul>
-                        </div>
-                      </div>
-                    </li>`;
-  // const listItem = document.createElement('li');
-  // listItem.classList.add('project-list');
-  // projectContainer.appendChild(list);
-  console.log(list);
+  const li = document.createElement('li');
+  li.classList.add('project-item');
+  li.innerHTML = `<img src="${project.image}"/>
+                  <div class="project-details">
+                    <h2>${project.projectName}</h2>
+                    <p>${project.projectDescription}</p>
+                    <ul class="technologies-list ${project.class}">
+                    </ul>
+                  <div>`;
+  projectWrapper.appendChild(li);
+});
+
+const techList = document.querySelectorAll('.technologies-list');
+
+projects.forEach((project) => {
+  Array.from(techList).forEach((element) => {
+    if (element.classList.contains(project.class)) {
+      element.setAttribute('id', project.id);
+      project.stack.forEach((stack) => {
+        const techItem = document.createElement('li');
+        techItem.classList.add('tech-item');
+        techItem.textContent = stack;
+        element.appendChild(techItem);
+      });
+    }
+  });
 });
 
 [img.src] = [pictures[0]];

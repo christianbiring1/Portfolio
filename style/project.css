@@ -51,6 +51,10 @@ button .arrow {
 
 .project-list {
   margin-top: 1000px;
-  display: flex;
+  display: block;
   z-index: 999;
+}
+
+.project-list img {
+  width: 100%;
 }

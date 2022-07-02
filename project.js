@@ -46,7 +46,7 @@ const projects = [
     sourceCode: '',
   },
   {
-    images: './images/leader-board.png',
+    image: './images/leader-board.png',
     class: '',
     projectName: 'Leader board',
     stack: ['HTML5', 'CSS3', 'JavaScript', 'API'],
@@ -76,11 +76,11 @@ const projects = [
   },
 ];
 
-console.log(projectContainer);
+// console.log(projectContainer);
 
+const list = document.querySelector('.project-list');
 projects.forEach((project) => {
-  const list = document.querySelector('.project-list');
-  list.textContent = `<li class="project-list">
+  list.innerHTML = `<li class="project-list">
                       <img src= "${project.image}" alt="${project.name}-screenshot" class="projet">
                       <div>
                         <h2>${project.projectName}</h2>
@@ -91,10 +91,10 @@ projects.forEach((project) => {
                         </div>
                       </div>
                     </li>`;
-  const listItem = document.createElement('li');
-  listItem.classList.add('project-list');
-  // projectContainer.appendChild(list); */
-  console.log(project.stack);
+  // const listItem = document.createElement('li');
+  // listItem.classList.add('project-list');
+  // projectContainer.appendChild(list);
+  console.log(list);
 });
 
 [img.src] = [pictures[0]];

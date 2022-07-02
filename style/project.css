@@ -26,7 +26,7 @@
 .project-list {
   padding: 10px;
   list-style-type: none;
-  /* background-color: red; */
+  background-color: lightgoldenrodyellow;
   border: 1px solid;
   border-radius: 15px;
 }
@@ -84,19 +84,19 @@
     color: #396df2;
 }
 
-.project-container button {
-  /* border: none; */
+.move {
+  border: none;
   outline: none;
-  /* background: rgba(0, 0, 0, 0.5); */
   cursor: pointer;
-  /* padding: 1rem; */
+  padding: 1rem;
+  background-color: transparent;
 }
 
 button .arrow {
   border: solid #2230d2;
-  border-width: 0 4px 4px 0;
+  border-width: 0 6px 6px 0;
   display: inline-block;
-  padding: 10px;
+  padding: 15px;
   transition: transform 0.3s ease-out;
   outline: none;
 }
@@ -126,6 +126,8 @@ button .arrow {
 
 .project-list img {
   width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .project-item {

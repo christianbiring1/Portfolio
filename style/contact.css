@@ -76,7 +76,6 @@
   font-size: 17px;
   text-align: center;
   letter-spacing: 3%;
-  animation: wiggle 2s linear infinite;
 }
 
 #contact button:hover {

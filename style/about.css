@@ -24,7 +24,7 @@
 
 .resume {
   text-decoration: none;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   border: 1px solid #6070ff;
   border-radius: 10px;
   padding: 0.6em;
@@ -63,7 +63,6 @@
 }
 
 @keyframes wiggle {
-
   0%,
   7% {
     transform: rotate(0);
@@ -119,7 +118,6 @@
   gap: 10px;
 }
 
-
 .stack-top {
   position: relative;
   display: flex;
@@ -147,6 +145,7 @@
 img[alt="bootstrap-logo"] {
   border-radius: 50%;
 }
+
 /* ***************** INTERACTION ON THE LANGUAGES, FRAMEWORKS ***************** */
 
 .next,
@@ -206,13 +205,14 @@ img[alt="bootstrap-logo"] {
   padding: 3px;
 }
 
-@media only screen and (min-width: 730px){
+@media only screen and (min-width: 730px) {
   #about {
     display: grid;
     grid-template-columns: 1fr 50%;
     gap: 20px;
     padding: 0 20px;
   }
+
   .stack {
     margin-top: 70px;
   }
@@ -225,7 +225,8 @@ img[alt="bootstrap-logo"] {
   .stack-item {
     padding: 15px 0;
   }
-/* ************* Stacks in the language, frameworks *********** */
+
+  /* ************* Stacks in the language, frameworks *********** */
   .languages.active,
   .frameworks.active,
   .tools.active {
@@ -254,14 +255,14 @@ img[alt="bootstrap-logo"] {
   }
 }
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px) {
   .skillset-list {
     grid-template-columns: repeat(3, auto);
   }
 
-    .languages.active,
-    .frameworks.active,
-    .tools.active {
-      grid-template-columns: 1fr 1fr 1fr 20%;
-    }
+  .languages.active,
+  .frameworks.active,
+  .tools.active {
+    grid-template-columns: 1fr 1fr 1fr 20%;
+  }
 }

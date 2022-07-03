@@ -31,7 +31,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(0, 0, 255, .5);
+  background-color: rgba(0, 0, 255, 0.5);
 }
 
 /* ***************** Mobile menu ************************** */
@@ -214,6 +214,48 @@ main {
   font-weight: 500;
   font-size: 16px;
   width: 95%;
+}
+
+.contact {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding: 0.6rem;
+  display: inline-block;
+  margin: 15px 0 20px;
+  width: 140px;
+  height: 48px;
+  line-height: 24px;
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: 3%;
+  animation: wiggle 2s linear infinite;
+}
+
+.contact:hover {
+  background: #6070ff;
+  box-shadow: 0 8px 16px #4053fc3d;
+  color: #fff;
+  border-color: #fff;
+}
+
+.contact:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+.contact .link {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #396df2;
+}
+
+.contact .link:hover {
+  color: #fff;
 }
 
 @media only screen and (min-width: 730px) {

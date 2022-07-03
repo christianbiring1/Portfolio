@@ -30,12 +30,16 @@
 }
 
 .project-list {
+  display: block;
   padding: 10px;
+  margin-top: 10px;
   list-style-type: none;
   background-color: lightgoldenrodyellow;
   border: 1px solid #172b4d;
   border-radius: 15px;
+  z-index: 999;
 }
+
 .project-list img {
   width: 100%;
   height: auto;
@@ -66,13 +70,13 @@
   display: inline-block;
   margin-top: 8px;
   padding: 0.2rem 0.3rem;
-  background-color: hwb(235 64% 13%);
+  background-color: rgb(163, 168, 222);
   border-radius: 12px;
 }
 
 .see-project {
   text-decoration: none;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   border: 1px solid #6070ff;
   border-radius: 10px;
   padding: 0.6em;
@@ -130,28 +134,23 @@ button .arrow {
   transform: rotate(135deg);
 }
 
-.project-list {
-  margin-top: 10px;
-  display: block;
-  z-index: 999;
-}
-
-
-@media only screen  and (min-width: 730px){
+@media only screen  and (min-width: 730px) {
   .project-container {
     width: 90%;
   }
+
   #projects h2,
   #projects h3 {
     text-align: center;
   }
+
   button .arrow {
     border-width: 0 6px 6px 0;
     padding: 15px;
   }
 }
 
-@media screen and (min-width: 820px){
+@media screen and (min-width: 820px) {
   .project-container {
     width: 50%;
   }

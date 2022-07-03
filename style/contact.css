@@ -57,22 +57,21 @@
 }
 
 #contact input:focus,
-textarea:focus {
+#contact textarea:focus {
   outline: 2px solid #504e4e;
 }
 
 #contact button {
   text-decoration: none;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   border: 1px solid #6070ff;
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 0.6rem;
   display: inline-block;
   margin: 15px 0 20px;
   width: 140px;
   height: 48px;
-  border-radius: 8px;
   line-height: 24px;
   font-size: 17px;
   text-align: center;
@@ -105,34 +104,34 @@ textarea:focus {
   font-weight: 500;
 }
 
-@media only screen and (min-width: 750px){
-    .interest p {
-      margin: 0 auto 25px;
-      width: 569px;
-      height: 102px;
-      transition: all 0.5s;
-    }
-  
-    .interest p:hover {
-      transform: translateX(-20px);
-    }
+@media only screen and (min-width: 750px) {
+  .interest p {
+    margin: 0 auto 25px;
+    width: 569px;
+    height: 102px;
+    transition: all 0.5s;
+  }
 
-    #contact {
-      border-top-left-radius: 200px;
-    }
+  .interest p:hover {
+    transform: translateX(-20px);
+  }
 
-    #form {
-      width: 447px;
-      margin: 0 auto;
-    }
-  
-    #contact input {
-      width: 447px;
-      padding: 15px;
-    }
-  
-    #contact textarea {
-      width: 447px;
-      height: 170px;
-    }
+  #contact {
+    border-top-left-radius: 200px;
+  }
+
+  #form {
+    width: 447px;
+    margin: 0 auto;
+  }
+
+  #contact input {
+    width: 447px;
+    padding: 15px;
+  }
+
+  #contact textarea {
+    width: 447px;
+    height: 170px;
+  }
 }

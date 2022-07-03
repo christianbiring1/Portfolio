@@ -53,7 +53,7 @@ projectWrapper.id = 1;
 const index = identifier.length - 1;
 let position = 0;
 
-// FOR MOBING THE PROJECT LIST ON THE RIGHT
+// FOR MOVING THE PROJECT LIST ON THE RIGHT
 
 projectItem[0].classList.toggle('active');
 const moveRight = () => {
@@ -68,7 +68,7 @@ const moveRight = () => {
   }
 };
 
-// FOR MOBING THE PROJECT LIST ON THE LEFT
+// FOR MOVING THE PROJECT LIST ON THE LEFT
 
 const moveLeft = () => {
   if (position < 1) {

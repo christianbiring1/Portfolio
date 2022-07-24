@@ -155,6 +155,9 @@ main {
   display: grid;
   gap: 10px;
   padding: 0 0 10px;
+  box-shadow: 1px 1px 2px rgb(148, 145, 145);
+  border-bottom-left-radius: 50px;
+
 }
 
 .social-handler {
@@ -306,6 +309,8 @@ main {
   .top-body {
     display: grid;
     width: 100%;
+    box-shadow: 1px 1px 2px rgb(148, 145, 145);
+    border-bottom-left-radius: 35%;
   }
 
   .social-handler {

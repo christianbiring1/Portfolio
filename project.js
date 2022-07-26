@@ -10,7 +10,7 @@ projects.forEach((project) => {
   const li = document.createElement('li');
   li.classList.add('project-item');
   li.setAttribute('id', project.id);
-  li.innerHTML = `<img src="${project.image}"/>
+  li.innerHTML = `<img src="${project.image}" class="${project.class}"/>
                   <div class="project-details">
                     <h3>${project.projectName}</h3>
                     <p>${project.projectDescription}</p>
@@ -19,6 +19,31 @@ projects.forEach((project) => {
                     <button class="see-project">See Project</button>
                   <div>`;
   projectWrapper.appendChild(li);
+
+  const layer = document.querySelector('.layer');
+  const container = document.createElement('div');
+  const popCreator = document.querySelectorAll(`.${project.class}`);
+  popCreator.forEach((image) => {
+    image.addEventListener('click', () => {
+      container.innerHTML = `
+                            <div class="header">
+                              <h2>${project.projectName}</h2>
+                              <button>&times;</button>
+                            </div>
+                            <img src="${image.getAttribute('src')}">
+                            <div>
+                              <p>${project.projectDescription}</p>
+                            </div>
+                            <ul class="technologies-list ${project.class}">
+                            </ul>
+                            <div>
+                              <button class="live"><a href="${project.liveDemo}">See live</a></button>
+                              <button class="source"><a href="${project.sourceCode}">Source Code</a></button>
+                            </div>
+                              `;
+      layer.appendChild(container);
+    });
+  });
 });
 
 /* ********************* POPULATE THE PROJECT STACKS (TECHNOLOGIES) ************************ */
@@ -82,5 +107,5 @@ const moveLeft = () => {
   }
 };
 
-rightBtn.addEventListener('click', moveRight);
-leftBtn.addEventListener('click', moveLeft);
+rightBtn.addEventListener('click', moveLeft);
+leftBtn.addEventListener('click', moveRight);

@@ -17,7 +17,7 @@ projects.forEach((project) => {
                     <p>${project.projectDescription}</p>
                     <ul class="technologies-list ${project.class}">
                     </ul>
-                    <button class="see-project">See Project</button>
+                    <button class="see-project">See Project<img src="${project.image}" class="${project.class}"/></button>
                   <div>`;
   projectWrapper.appendChild(li);
 
@@ -46,12 +46,13 @@ projects.forEach((project) => {
       layer.appendChild(modal);
       layer.classList.toggle('active');
       modal.classList.toggle('active');
-      closebtn = document.querySelector('.close-button');
-      closebtn.addEventListener('click', () => {
-        modal.classList.toggle('active');
-        layer.classList.toggle('active');
+      closebtn = document.querySelectorAll('.close-button');
+      closebtn.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          layer.classList.remove('active');
+          modal.classList.remove('active');
+        });
       });
-      console.log(closebtn);
     });
   });
 });
@@ -63,6 +64,7 @@ const techList = document.querySelectorAll('.technologies-list');
 // Identifier or id of the project li
 const identifier = [];
 let i = 0;
+
 projects.forEach((project) => {
   identifier.push(i);
   i += 1;

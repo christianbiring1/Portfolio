@@ -1,20 +1,33 @@
 .popup {
-  display: none;
+  opacity: 0;
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 200ms ease-in-out;
+  transform: translate(-50%, -50%) scale(0);
   border: 1px solid black;
   border-radius: 10px;
   background-color: white;
   width: 500px;
   max-width: 80%;
-  /* z-index: 99999999; */
+  z-index: 99999999;
+}
+
+.popup h2 {
+  font-size: 30px;
+  line-height: 42px;
+  color: #172b4d;
+  margin-bottom: 5px;
+}
+
+.popup p {
+  color: #344563;
+  line-height: 24px;
+  font-weight: 500;
 }
 
 .popup.active {
-  display: block;
+  transition: 1000ms ease-in-out;
+  opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }
 .modal-header {
@@ -54,19 +67,34 @@
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, .6);
-  /* pointer-events: none; */
+  pointer-events: none;
 }
 
 .layer.active {
   z-index: 10;
   display: block;
   opacity: 1;
-  transition: 200ms ease-in-out;
+  transition: 500ms ease-in-out;
   pointer-events: all;
 }
 
 .modal-bottom {
   padding: 10px;
+}
+
+.see-project {
+  position: relative;
+  align-items: center;
+}
+
+.see-project img {
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  border-radius: 10px;
+  width: 100%;
 }
 
 .live,
@@ -97,4 +125,16 @@
 .source:active {
   background: #2230d2;
   color: #fff;
+}
+
+.live a:hover,
+.source a:hover {
+  color: #fff;
+}
+
+@media only screen and (min-width: 730px) {
+  .popup {
+    border-radius: 10px;
+    width: 550px;
+  }
 }

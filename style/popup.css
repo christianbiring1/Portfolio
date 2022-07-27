@@ -19,7 +19,8 @@
   margin-bottom: 5px;
 }
 
-.popup p {
+.popup p,
+.popup a {
   color: #344563;
   line-height: 24px;
   font-weight: 500;

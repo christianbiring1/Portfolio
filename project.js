@@ -39,8 +39,14 @@ projects.forEach((project) => {
                             <ul class="technologies-list ${project.class}">
                             </ul>
                             <div class="modal-bottom">
-                              <button class="live"><a href="${project.liveDemo}">See live</a></button>
-                              <button class="source"><a href="${project.sourceCode}">Source Code</a></button>
+                              <button class="live">
+                                <a href="${project.liveDemo}">See live</a>
+                                <img src="./images/liveicon.png"/>
+                              </button>
+                              <button class="source">
+                                <a href="${project.sourceCode}">Source Code</a>
+                                <img src="./images/sourcevector.png"/>
+                              </button>
                             </div>
                               `;
       layer.appendChild(modal);

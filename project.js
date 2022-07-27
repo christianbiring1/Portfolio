@@ -2,6 +2,7 @@ import projects from './list.js';
 
 const rightBtn = document.getElementById('right-btn');
 const leftBtn = document.getElementById('left-btn');
+let closebtn;
 
 /* **************************** RENDER PROJECTS SECTION DYNAMICALLY ************************** */
 
@@ -21,27 +22,36 @@ projects.forEach((project) => {
   projectWrapper.appendChild(li);
 
   const layer = document.querySelector('.layer');
-  const container = document.createElement('div');
+  const modal = document.createElement('div');
+  modal.setAttribute('class', 'popup');
   const popCreator = document.querySelectorAll(`.${project.class}`);
   popCreator.forEach((image) => {
     image.addEventListener('click', () => {
-      container.innerHTML = `
-                            <div class="header">
+      modal.innerHTML = `
+                            <div class="modal-header">
                               <h2>${project.projectName}</h2>
-                              <button>&times;</button>
+                              <button class="close-button">&times;</button>
                             </div>
-                            <img src="${image.getAttribute('src')}">
-                            <div>
+                            <img src="${image.getAttribute('src')}" class="modal-image">
+                            <div class="modal-body">
                               <p>${project.projectDescription}</p>
                             </div>
                             <ul class="technologies-list ${project.class}">
                             </ul>
-                            <div>
+                            <div class="modal-bottom">
                               <button class="live"><a href="${project.liveDemo}">See live</a></button>
                               <button class="source"><a href="${project.sourceCode}">Source Code</a></button>
                             </div>
                               `;
-      layer.appendChild(container);
+      layer.appendChild(modal);
+      layer.classList.toggle('active');
+      modal.classList.toggle('active');
+      closebtn = document.querySelector('.close-button');
+      closebtn.addEventListener('click', () => {
+        modal.classList.toggle('active');
+        layer.classList.toggle('active');
+      });
+      console.log(closebtn);
     });
   });
 });

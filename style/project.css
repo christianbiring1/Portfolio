@@ -37,7 +37,7 @@
   background-color: lightgoldenrodyellow;
   border: 1px solid #172b4d;
   border-radius: 15px;
-  z-index: 999;
+  /* z-index: 999; */
   width: 80%;
 }
 

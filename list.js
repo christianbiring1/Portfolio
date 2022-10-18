@@ -2,19 +2,19 @@
 
 const projects = [
   {
-    image: './images/Genuine-charity.png',
-    id: 6,
-    projectName: 'Genuine Charity',
-    stack: ['HTML5', 'CSS3', 'JavaScript'],
-    projectDescription: 'This project I have built was based on an online website for a conference. I have been provided some design guidelines to create the website, but I have personalized the content, and some features, i.e, instead of a conference web App I have built a website for charity and care.',
-    liveDemo: 'https://christianbiring1.github.io/Capstone_project-module1/',
-    sourceCode: '',
-    class: 'genuineCharity',
+    image: './images/budgetapp.png',
+    id: 1,
+    projectName: 'Budget App',
+    stack: ['Ruby on Rails', 'Bootstrap', 'PostgreSQL'],
+    projectDescription: ' This project is about building a mobile web application where the user can manage their budget: they have a list of transactions associated with a category, so that they can see how much money they spent and on what.',
+    liveDemo: 'https://budgetchris.herokuapp.com/',
+    sourceCode: 'https://github.com/christianbiring1/Budget_App',
+    class: 'budjetApp',
   },
 
   {
     image: './images/Covid-App.png',
-    id: 0,
+    id: 1,
     projectName: 'Covid-19 App',
     stack: ['HTML5', 'CSS3', 'React', 'Redux', 'Covid API'],
     projectDescription: 'This project is about building a mobile web application to check a list of metrics (numeric values) that I had to create making use of React and Redux. I have selected an API that provides numeric data about a the covid-19 views case in the world per country then build the webapp around it',
@@ -25,7 +25,7 @@ const projects = [
 
   {
     image: './images/bookstore-react.png',
-    id: 1,
+    id: 2,
     projectName: 'BookStore',
     stack: ['HTML5', 'CSS3', 'React', 'Redux', 'API'],
     projectDescription: `The Bookstore is a website similar to the "Awesome Books" website built in the previous module. I had to create an MVP version of it that allows the user to:
@@ -39,7 +39,7 @@ const projects = [
 
   {
     image: './images/chris-math-magician.png',
-    id: 2,
+    id: 3,
     projectName: 'Math magician',
     stack: ['HTML5', 'CSS3', 'React'],
     projectDescription: 'Math Magician application is a simple but effective simple web calculator that allows users to execute simple mathematical calculations. I had to set up the environment and tools needed to develop a React application',
@@ -50,7 +50,7 @@ const projects = [
 
   {
     image: './images/movieposter.png',
-    id: 3,
+    id: 4,
     projectName: 'Movie poster',
     stack: ['HTML5', 'CSS3', 'JavaScript', 'TVMaze API'],
     projectDescription: 'This project was about building my own web application based on an external API. I had to select an API of TVMaze that provides data about the movie show and then build the webapp around it.',
@@ -61,7 +61,7 @@ const projects = [
 
   {
     image: './images/leader-board.png',
-    id: 4,
+    id: 5,
     projectName: 'Leader board',
     stack: ['HTML5', 'CSS3', 'JavaScript', 'API'],
     projectDescription: 'In this activity I had to set up the project for the Leaderboard list app, using webpack and ES6 features, notably modules. I had to develop the version of the app following a wireframe',
@@ -72,7 +72,7 @@ const projects = [
 
   {
     image: './images/To-Do_list.png',
-    id: 5,
+    id: 6,
     projectName: 'To Do list',
     stack: ['HTML5', 'CSS3', 'JavaScript', 'LocalStorage'],
     projectDescription: 'In this project, I had to build a simple HTML list of To Do tasks. The user will be able to create, update and delete (CRUD)the tasks. This simple web page was built using webpack and served by a webpack dev server.',
@@ -81,6 +81,16 @@ const projects = [
     class: 'todolist',
   },
 
+  {
+    image: './images/Genuine-charity.png',
+    id: 7,
+    projectName: 'Genuine Charity',
+    stack: ['HTML5', 'CSS3', 'JavaScript'],
+    projectDescription: 'This project I have built was based on an online website for a conference. I have been provided some design guidelines to create the website, but I have personalized the content, and some features, i.e, instead of a conference web App I have built a website for charity and care.',
+    liveDemo: 'https://christianbiring1.github.io/Capstone_project-module1/',
+    sourceCode: '',
+    class: 'genuineCharity',
+  },
 ];
 
 export default projects;

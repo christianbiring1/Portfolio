@@ -64,7 +64,8 @@
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 5px;
+  padding: 5px 0;
+  gap: 5px;
   width: 60%;
 }
 

@@ -40,11 +40,11 @@ projects.forEach((project) => {
                             </ul>
                             <div class="modal-bottom">
                               <button class="live">
-                                <a href="${project.liveDemo}">See live</a>
+                                <a href="${project.liveDemo}" target="_blank" >See live</a>
                                 <img src="./images/liveicon.png"/>
                               </button>
                               <button class="source">
-                                <a href="${project.sourceCode}">Source Code</a>
+                                <a href="${project.sourceCode}" target="_blank" >Source Code</a>
                                 <img src="./images/sourcevector.png"/>
                               </button>
                             </div>

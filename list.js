@@ -18,7 +18,7 @@ const projects = [
     projectName: 'Covid-19 App',
     stack: ['ReactJS', 'Redux', 'Covid API', 'CSS'],
     projectDescription: 'This project is about building a mobile web application to check a list of metrics (numeric values) that I had to create making use of React and Redux. I have selected an API that provides numeric data about a the covid-19 views case in the world per country then build the webapp around it',
-    liveDemo: 'https://chris-metrics-webapp.herokuapp.com/',
+    liveDemo: 'https://glittering-centaur-5e199f.netlify.app',
     sourceCode: 'https://github.com/christianbiring1/metrics-webapp',
     class: 'covidApp',
   },
@@ -32,7 +32,7 @@ const projects = [
                         Display a list of books.
                         Add a book.
                         Remove a selected book`,
-    liveDemo: 'https://chrisbookstore.herokuapp.com/',
+    liveDemo: 'https://kaleidoscopic-flan-8dba08.netlify.app',
     sourceCode: 'https://github.com/christianbiring1/bookstore',
     class: 'bookstore',
   },

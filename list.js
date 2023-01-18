@@ -22,6 +22,16 @@ const projects = [
     sourceCode: 'https://github.com/christianbiring1/metrics-webapp',
     class: 'covidApp',
   },
+  {
+    image: './images/chris-math-magician.png',
+    id: 3,
+    projectName: 'Space_traveler',
+    stack: ['ReactJS', 'SCSS', 'JSX'],
+    projectDescription: 'In this project, I have worked with the real live data from the SpaceX API to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
+    liveDemo: 'https://fancy-elf-c0882d.netlify.app/',
+    sourceCode: 'https://github.com/christianbiring1/space_traveler',
+    class: 'space_traveler',
+  },
 
   {
     image: './images/bookstore-react.png',
@@ -35,17 +45,6 @@ const projects = [
     liveDemo: 'https://kaleidoscopic-flan-8dba08.netlify.app',
     sourceCode: 'https://github.com/christianbiring1/bookstore',
     class: 'bookstore',
-  },
-
-  {
-    image: './images/chris-math-magician.png',
-    id: 3,
-    projectName: 'Math magician',
-    stack: ['ReactJS', 'CSS3', 'JSX'],
-    projectDescription: 'Math Magician application is a simple but effective simple web calculator that allows users to execute simple mathematical calculations. I had to set up the environment and tools needed to develop a React application',
-    liveDemo: 'https://chris-math-magician.herokuapp.com/',
-    sourceCode: 'https://github.com/christianbiring1/math_magician',
-    class: 'mathmagician',
   },
 
   {

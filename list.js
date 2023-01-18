@@ -7,7 +7,7 @@ const projects = [
     projectName: 'Budget App',
     stack: ['Ruby on Rails', 'PostgreSQL', 'Bootstrap', 'CSS'],
     projectDescription: ' This project is about building a mobile web application where the user can manage their budget: they have a list of transactions associated with a category, so that they can see how much money they spent and on what.',
-    liveDemo: 'https://budgetchris.herokuapp.com/',
+    liveDemo: 'https://budget-app-4zi2.onrender.com',
     sourceCode: 'https://github.com/christianbiring1/Budget_App',
     class: 'budjetApp',
   },

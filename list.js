@@ -14,7 +14,7 @@ const projects = [
 
   {
     image: './images/Covid-App.png',
-    id: 1,
+    id: 2,
     projectName: 'Covid-19 App',
     stack: ['ReactJS', 'Redux', 'Covid API', 'CSS'],
     projectDescription: 'This project is about building a mobile web application to check a list of metrics (numeric values) that I had to create making use of React and Redux. I have selected an API that provides numeric data about a the covid-19 views case in the world per country then build the webapp around it',
@@ -23,7 +23,7 @@ const projects = [
     class: 'covidApp',
   },
   {
-    image: './images/chris-math-magician.png',
+    image: './images/space_traveler.png',
     id: 3,
     projectName: 'Space_traveler',
     stack: ['ReactJS', 'SCSS', 'JSX'],
@@ -35,7 +35,7 @@ const projects = [
 
   {
     image: './images/bookstore-react.png',
-    id: 2,
+    id: 4,
     projectName: 'BookStore',
     stack: ['ReactJS', 'Redux', 'API', 'CSS'],
     projectDescription: `The Bookstore is a website similar to the "Awesome Books" website built in the previous module. I had to create an MVP version of it that allows the user to:
@@ -49,7 +49,7 @@ const projects = [
 
   {
     image: './images/movieposter.png',
-    id: 4,
+    id: 6,
     projectName: 'Movie poster',
     stack: ['JavaScript', 'TVMaze API', 'Webpack', 'HTML5', 'CSS3'],
     projectDescription: 'This project was about building my own web application based on an external API. I had to select an API of TVMaze that provides data about the movie show and then build the webapp around it.',
@@ -60,7 +60,7 @@ const projects = [
 
   {
     image: './images/leader-board.png',
-    id: 5,
+    id: 7,
     projectName: 'Leader board',
     stack: ['JavaScript', 'API', 'Webpack', 'HTML5', 'CSS3'],
     projectDescription: 'In this activity I had to set up the project for the Leaderboard list app, using webpack and ES6 features, notably modules. I had to develop the version of the app following a wireframe',
@@ -71,7 +71,7 @@ const projects = [
 
   {
     image: './images/To-Do_list.png',
-    id: 6,
+    id: 8,
     projectName: 'To Do list',
     stack: ['JavaScript', 'LocalStorage', 'Webpack', 'HTML5', 'CSS3'],
     projectDescription: 'In this project, I had to build a simple HTML list of To Do tasks. The user will be able to create, update and delete (CRUD)the tasks. This simple web page was built using webpack and served by a webpack dev server.',
@@ -82,7 +82,7 @@ const projects = [
 
   {
     image: './images/Genuine-charity.png',
-    id: 7,
+    id: 9,
     projectName: 'Genuine Charity',
     stack: ['JavaScript', 'HTML5', 'CSS3'],
     projectDescription: 'This project I have built was based on an online website for a conference. I have been provided some design guidelines to create the website, but I have personalized the content, and some features, i.e, instead of a conference web App I have built a website for charity and care.',

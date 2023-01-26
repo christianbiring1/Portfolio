@@ -125,5 +125,5 @@ const moveLeft = () => {
   }
 };
 
-rightBtn.addEventListener('click', moveLeft);
-leftBtn.addEventListener('click', moveRight);
+rightBtn.addEventListener('click', moveRight);
+leftBtn.addEventListener('click', moveLeft);

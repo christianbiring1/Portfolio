@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,500&family=Roboto:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 
 *,
 *::after,
@@ -9,11 +9,12 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #c1c7d033;
+  font-family: 'Inter', sans-serif;
+  color: #918ca4;
 }
 
 ::-webkit-scrollbar {
@@ -38,7 +39,11 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
 }
 
 .header.active {
@@ -48,7 +53,7 @@ body {
   right: 0;
   left: 0;
   bottom: 0;
-  z-index: 9999;
+  z-index: 999;
   height: 2000px;
 }
 
@@ -142,8 +147,8 @@ a {
 
 .name {
   font-weight: bold;
-  color: blue;
-  font-size: 1.3rem;
+  color: #1b0760;
+  font-size: 2.5rem;
 }
 
 /* ***************** Header top Introduction * ***************** */
@@ -158,6 +163,10 @@ main {
   box-shadow: 1px 1px 2px rgb(148, 145, 145);
   border-bottom-left-radius: 50px;
 
+}
+
+p {
+  color: #918ca4;
 }
 
 .social-handler {
@@ -203,7 +212,7 @@ main {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #172b4d;
+  color: #1b0760;
   padding: 1rem 0 10px;
 }
 
@@ -212,28 +221,26 @@ main {
 }
 
 .paragraph {
-  color: #344563;
+  color: #918ca4;
   line-height: 24px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 2rem;
   width: 95%;
 }
 
 .direct {
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #1b0760;
   font-weight: 500;
+  font-size: 2rem;
   border: 1px solid #6070ff;
   border-radius: 8px;
   padding: 0.6rem;
   display: inline-block;
-  margin: 15px 0 20px;
+  margin: 1.5rem auto 2rem;
   width: 140px;
   height: 48px;
-  line-height: 24px;
-  font-size: 17px;
-  text-align: center;
-  letter-spacing: 3%;
   animation: wiggle 2s linear infinite;
 }
 
@@ -294,6 +301,7 @@ main {
 
   .list-item a {
     color: blue;
+    font-size: 1.7rem;
   }
 
   .brand {
@@ -301,7 +309,7 @@ main {
   }
 
   .name {
-    font-size: 1.5rem;
+    font-size: 2.8rem;
   }
 
   /* ***************** Header top Introduction * ***************** */
@@ -311,9 +319,13 @@ main {
     width: 100%;
     box-shadow: 1px 1px 2px rgb(148, 145, 145);
     border-bottom-left-radius: 35%;
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
+    margin: 10rem 0 2rem;
   }
 
   .social-handler {
+    margin-top: 6rem;
     margin-left: 50px;
   }
 
@@ -323,9 +335,10 @@ main {
 
   .primary-text-desk {
     display: block;
-    font-size: 48px;
+    font-size: 4.8rem;
+    margin-bottom: 3rem;
     line-height: 60px;
-    color: #091e42;
+    color: #1b0760;
     height: 122px;
     letter-spacing: 0.37px;
   }
@@ -342,5 +355,22 @@ main {
 
   .paragraph {
     width: 60%;
+    font-weight: normal;
+  }
+
+  .direct {
+    text-decoration: none;
+    text-align: center;
+    vertical-align: center;
+    color: #1b0760;
+    font-weight: 500;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    padding: 0.6rem;
+    display: inline-block;
+    margin: 1.5rem 0 2rem;
+    width: 140px;
+    height: 48px;
+    animation: wiggle 2s linear infinite;
   }
 }

@@ -10,6 +10,7 @@ const projects = [
     liveDemo: 'https://budget-app-4zi2.onrender.com',
     sourceCode: 'https://github.com/christianbiring1/Budget_App',
     class: 'budjetApp',
+    anime: 'flip-left'
   },
 
   {

@@ -91,39 +91,39 @@ projects.forEach((project) => {
 
 /* ***************** ALGORITHM FOR THE CAROUSSEL ON THE PROJECT LIST **************** */
 
-const projectItem = document.querySelectorAll('.project-item');
-projectWrapper.id = 1;
-const index = identifier.length - 1;
-let position = 0;
+// const projectItem = document.querySelectorAll('.project-item');
+// projectWrapper.id = 1;
+// const index = identifier.length - 1;
+// let position = 0;
 
 // FOR MOVING THE PROJECT LIST ON THE RIGHT
 
-projectItem[0].classList.toggle('active');
-const moveRight = () => {
-  if (position >= identifier.length - 1) {
-    projectItem[0].classList.toggle('active');
-    projectItem[index].classList.remove('active');
-    position = 0;
-  } else {
-    projectItem[position].classList.remove('active');
-    projectItem[position + 1].classList.toggle('active');
-    position += 1;
-  }
-};
+// projectItem[0].classList.toggle('active');
+// const moveRight = () => {
+//   if (position >= identifier.length - 1) {
+//     projectItem[0].classList.toggle('active');
+//     projectItem[index].classList.remove('active');
+//     position = 0;
+//   } else {
+//     projectItem[position].classList.remove('active');
+//     projectItem[position + 1].classList.toggle('active');
+//     position += 1;
+//   }
+// };
 
 // FOR MOVING THE PROJECT LIST ON THE LEFT
 
-const moveLeft = () => {
-  if (position < 1) {
-    projectItem[position].classList.toggle('active');
-    position = identifier.length - 1;
-    projectItem[position].classList.toggle('active');
-  } else {
-    projectItem[position - 1].classList.toggle('active');
-    projectItem[position].classList.remove('active');
-    position -= 1;
-  }
-};
+// const moveLeft = () => {
+//   if (position < 1) {
+//     projectItem[position].classList.toggle('active');
+//     position = identifier.length - 1;
+//     projectItem[position].classList.toggle('active');
+//   } else {
+//     projectItem[position - 1].classList.toggle('active');
+//     projectItem[position].classList.remove('active');
+//     position -= 1;
+//   }
+// };
 
-rightBtn.addEventListener('click', moveRight);
-leftBtn.addEventListener('click', moveLeft);
+// rightBtn.addEventListener('click', moveRight);
+// leftBtn.addEventListener('click', moveLeft);

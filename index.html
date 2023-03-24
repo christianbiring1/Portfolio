@@ -19,6 +19,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/jpg" href="images/rsz_1profil.jpg" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style/index.css" />
     <link rel="stylesheet" href="./style/about.css" />
     <link rel="stylesheet" href="./style/contact.css" />
@@ -43,7 +44,7 @@
           <li class="list-item">
             <a href="#contact" class="anchor contact">Contact me</a>
           </li>
-          <li class="list-item visual-mode">
+          <!-- <li class="list-item visual-mode">
             <img
               src="images/brightness.png"
               alt="bright-mode"
@@ -56,7 +57,7 @@
               class="night-mode"
               title="dark-mode"
             />
-          </li>
+          </li> -->
         </ul>
       </nav>
       <div class="hamburger-menu">
@@ -66,9 +67,9 @@
       </div>
     </div>
     <main>
-      <div class="top-body">
+      <div class="top-body" data-aos="fade">
         <div class="social-handler">
-          <ul class="social-list">
+          <ul class="social-list" data-aos="fade-down" data-aos-duration="1000">
             <li class="social-item">
               <a href="https://github.com/christianbiring1" target="_blank"
                 ><img src="images/Vector.svg" alt=""
@@ -101,32 +102,44 @@
           </ul>
         </div>
         <div class="avatar">
-          <img src="images/profil.jpg" class="myphoto" alt="photo" />
+          <img
+            src="images/profil.jpg"
+            class="myphoto"
+            alt="photo"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          />
         </div>
         <div class="intro">
-          <h1 class="primary-text">I'm Christian<br />Glad to see<br />you!</h1>
-          <h1 class="primary-text-desk">I'm Christian<br />Glad to see you!</h1>
-          <p class="paragraph">
+          <h1 class="primary-text" data-aos="fade-up" data-aos-duration="1000">
+            I'm Christian<br />Glad to see<br />you!
+          </h1>
+          <h1 class="primary-text-desk" data-aos="fade-up">
+            I'm Christian<br />Glad to see you!
+          </h1>
+          <p class="paragraph" data-aos="fade-up">
             I'm a software developer! I can help you build a product, feature or
             website. Look through some of my work and experience! If you like
             what you see and have a project you need coded, don't hesitate to
             contact me.
           </p>
-          <button class="direct">
-            <a href="#contact" class="link">contact me</a>
-          </button>
+          <a href="#contact" class="direct" data-aos="fade-right">contact me</a>
         </div>
       </div>
       <div id="projects">
-        <h2>Projects</h2>
+        <h2 data-aos="fade-up">Projects</h2>
         <div class="project-container">
-          <button id="left-btn" class="move"><i class="arrow"></i></button>
-          <ul class="project-list"></ul>
-          <button id="right-btn" class="move"><i class="arrow"></i></button>
+          <!-- <button id="left-btn" class="move"><i class="arrow"></i></button> -->
+          <ul
+            class="project-list"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+          ></ul>
+          <!-- <button id="right-btn" class="move"><i class="arrow"></i></button> -->
         </div>
       </div>
       <div class="layer"></div>
-      <div id="about">
+      <div id="about" data-aos="zoom-in-up" data-aos-duration="1000">
         <div class="pitch">
           <h2>About<br />Myself</h2>
           <p>
@@ -191,7 +204,11 @@
         </div>
         <div class="stack">
           <ul class="stack-list">
-            <li class="stack-item">
+            <li
+              class="stack-item"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
               <div class="stack-top">
                 <h3>Languages</h3>
                 <img src="./images/next.png" class="next" alt="next" />
@@ -225,7 +242,11 @@
               </div>
             </li>
             <li class="stack-item">
-              <div class="stack-top">
+              <div
+                class="stack-top"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <h3>Frameworks</h3>
                 <img src="./images/next.png" class="next" alt="next" />
                 <img
@@ -254,7 +275,7 @@
               </div>
             </li>
             <li class="stack-item">
-              <div class="stack-top">
+              <div class="stack-top" data-aos="fade-up">
                 <h3>Tools</h3>
                 <img src="./images/next.png" class="next" alt="next" />
                 <img
@@ -287,7 +308,7 @@
               </div>
             </li>
             <li class="stack-item">
-              <div class="stack-top">
+              <div class="stack-top" data-aos="fade-up">
                 <h3>Skills</h3>
                 <img src="./images/next.png" class="next" alt="next" />
                 <img
@@ -311,7 +332,7 @@
           </ul>
         </div>
       </div>
-      <div id="contact">
+      <div id="contact" data-aos="fade-up">
         <div class="interest">
           <h2>Contact me</h2>
           <p>
@@ -320,7 +341,13 @@
             to help with it.
           </p>
         </div>
-        <form action="https://formspree.io/f/mzbovqko" id="form" method="POST">
+        <form
+          action="https://formspree.io/f/mzbovqko"
+          id="form"
+          method="POST"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+        >
           <input
             type="text"
             id="name"
@@ -353,5 +380,9 @@
     <script type="module" src="index.js" defer></script>
     <script src="form.js" defer></script>
     <script type="module" src="project.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

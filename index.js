@@ -13,11 +13,11 @@ const downArrow = document.querySelectorAll('.down-arrow');
 
 const darkStyle = {
   color: '#fff',
-  backgroundColor: '#303030',
+  backgroundColor: '#333',
 };
 const brightStyle = {
-  color: '#172b4d',
-  backgroundColor: '#c1c7d033',
+  color: '#333',
+  backgroundColor: '#fff',
 };
 /* *********************** DARK MODE ************************************ */
 nightMode.addEventListener('click', () => {

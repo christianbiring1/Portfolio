@@ -48,16 +48,16 @@ const projects = [
     class: 'bookstore',
   },
 
-  {
-    image: './images/movieposter.png',
-    id: 6,
-    projectName: 'Movie poster',
-    stack: ['JavaScript', 'TVMaze API', 'Webpack', 'HTML5', 'CSS3'],
-    projectDescription: 'This project was about building my own web application based on an external API. I had to select an API of TVMaze that provides data about the movie show and then build the webapp around it.',
-    liveDemo: 'https://christianbiring1.github.io/Movies_poster-Capstone2/',
-    sourceCode: 'https://github.com/christianbiring1/Movies_poster-Capstone2',
-    class: 'movie',
-  },
+  // {
+  //   image: './images/movieposter.png',
+  //   id: 6,
+  //   projectName: 'Movie poster',
+  //   stack: ['JavaScript', 'TVMaze API', 'Webpack', 'HTML5', 'CSS3'],
+  //   projectDescription: 'This project was about building my own web application based on an external API. I had to select an API of TVMaze that provides data about the movie show and then build the webapp around it.',
+  //   liveDemo: 'https://christianbiring1.github.io/Movies_poster-Capstone2/',
+  //   sourceCode: 'https://github.com/christianbiring1/Movies_poster-Capstone2',
+  //   class: 'movie',
+  // },
 
   {
     image: './images/leader-board.png',

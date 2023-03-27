@@ -1,60 +1,60 @@
 /* ********************* Display mode ******************* */
-const brightMode = document.querySelector('.bright-mode');
-const nightMode = document.querySelector('.night-mode');
-const body = document.querySelector('body');
+// const brightMode = document.querySelector('.bright-mode');
+// const nightMode = document.querySelector('.night-mode');
+// const body = document.querySelector('body');
 const anchor = document.querySelectorAll('.list-item');
 const header = document.querySelector('.header');
 
-const intro = document.querySelectorAll('h1, h2');
-const paragraphs = document.querySelectorAll('p');
+// const intro = document.querySelectorAll('h1, h2');
+// const paragraphs = document.querySelectorAll('p');
 
 const next = document.querySelectorAll('.next');
 const downArrow = document.querySelectorAll('.down-arrow');
 
-const darkStyle = {
-  color: '#fff',
-  backgroundColor: '#333',
-};
-const brightStyle = {
-  color: '#333',
-  backgroundColor: '#fff',
-};
+// const darkStyle = {
+//   color: '#fff',
+//   backgroundColor: '#333',
+// };
+// const brightStyle = {
+//   color: '#333',
+//   backgroundColor: '#fff',
+// };
 /* *********************** DARK MODE ************************************ */
-nightMode.addEventListener('click', () => {
-  brightMode.classList.toggle('active');
-  Object.assign(body.style, darkStyle);
-  nightMode.classList.toggle('active');
-  intro.forEach((element) => {
-    element.style.color = '#ffffffcc';
-  });
-  paragraphs.forEach((item) => {
-    item.style.color = '#ffffffcc';
-  });
-  next.forEach((arrow) => {
-    arrow.style.filter = 'invert(1)';
-  });
-  downArrow.forEach((arrow) => {
-    arrow.style.filter = 'invert(1)';
-  });
-});
+// nightMode.addEventListener('click', () => {
+//   brightMode.classList.toggle('active');
+//   Object.assign(body.style, darkStyle);
+//   nightMode.classList.toggle('active');
+//   intro.forEach((element) => {
+//     element.style.color = '#ffffffcc';
+//   });
+//   paragraphs.forEach((item) => {
+//     item.style.color = '#ffffffcc';
+//   });
+//   next.forEach((arrow) => {
+//     arrow.style.filter = 'invert(1)';
+//   });
+//   downArrow.forEach((arrow) => {
+//     arrow.style.filter = 'invert(1)';
+//   });
+// });
 /* *************************** LIGHT MODE *********************************** */
-brightMode.addEventListener('click', () => {
-  brightMode.classList.remove('active');
-  Object.assign(body.style, brightStyle);
-  nightMode.classList.remove('active');
-  intro.forEach((element) => {
-    element.style.color = '#172b4d';
-  });
-  paragraphs.forEach((item) => {
-    item.style.color = '#344563';
-  });
-  next.forEach((arrow) => {
-    arrow.style.filter = 'brightness(50%) grayscale(50%) opacity(50%)';
-  });
-  downArrow.forEach((arrow) => {
-    arrow.style.filter = 'brightness(50%) grayscale(50%) opacity(50%)';
-  });
-});
+// brightMode.addEventListener('click', () => {
+//   brightMode.classList.remove('active');
+//   Object.assign(body.style, brightStyle);
+//   nightMode.classList.remove('active');
+//   intro.forEach((element) => {
+//     element.style.color = '#172b4d';
+//   });
+//   paragraphs.forEach((item) => {
+//     item.style.color = '#344563';
+//   });
+//   next.forEach((arrow) => {
+//     arrow.style.filter = 'brightness(50%) grayscale(50%) opacity(50%)';
+//   });
+//   downArrow.forEach((arrow) => {
+//     arrow.style.filter = 'brightness(50%) grayscale(50%) opacity(50%)';
+//   });
+// });
 
 /* ************************* Mobile Hamburger menu *************************** */
 

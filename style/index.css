@@ -157,7 +157,6 @@ a {
 /* ***************** Header top Introduction * ***************** */
 main {
   padding-top: 50px;
-  filter: blur(0px);
 }
 
 main.active {

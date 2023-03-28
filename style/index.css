@@ -48,7 +48,8 @@ body {
 }
 
 .header.active {
-  background-color: rgba(96, 112, 255, 0.8);
+  background-color: rgba(96, 112, 255, .8);
+  /* filter: blur(5px); */
   /* position: absolute; */
   top: 0;
   right: 0;
@@ -156,6 +157,11 @@ a {
 /* ***************** Header top Introduction * ***************** */
 main {
   padding-top: 50px;
+  filter: blur(0px);
+}
+
+main.active {
+  filter: blur(5px);
 }
 
 .top-body {

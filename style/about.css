@@ -148,7 +148,8 @@ img[alt="bootstrap-logo"] {
 
 .next,
 .down-arrow.active {
-  width: 30px;
+  width: 3rem;
+  height: 3rem;
   filter: brightness(50%) grayscale(50%) opacity(50%);
   display: inline;
 }

@@ -81,7 +81,7 @@ anchor.forEach((link) => {
 });
 
 /* ******************* INTERACTION ON THE LANGUAGES, SKILLS AND FRAMEWORKS ****************** */
-const stack__icons = document.querySelectorAll('.language img');
+const stackIcons = document.querySelectorAll('.language img');
 
 next.forEach((arrow) => {
   arrow.addEventListener('click', (e) => {
@@ -90,7 +90,7 @@ next.forEach((arrow) => {
     const li = e.target.parentNode.parentNode;
     const stack = li.children[1];
     stack.classList.toggle('active');
-    stack__icons.forEach((icon) => {
+    stackIcons.forEach((icon) => {
       icon.style.opacity = '1';
     });
   });
@@ -103,7 +103,7 @@ downArrow.forEach((arrrow) => {
     const li = e.target.parentNode.parentNode;
     const stack = li.children[1];
     stack.classList.remove('active');
-    stack__icons.forEach((icon) => {
+    stackIcons.forEach((icon) => {
       icon.style.opacity = '0';
     });
   });

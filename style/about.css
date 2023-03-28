@@ -170,14 +170,20 @@ img[alt="bootstrap-logo"] {
 .frameworks,
 .tools,
 .skillset {
-  display: none;
+  /* display: none; */
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .6s;
 }
 
 .languages.active,
 .frameworks.active,
 .tools.active,
 .skillset.active {
-  display: block;
+  /* display: block; */
+  max-height: max-content;
+  opacity: 1;
 }
 
 .language {

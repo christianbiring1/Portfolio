@@ -41,6 +41,7 @@
   column-gap: 2rem;
   -moz-column-gap: 2rem;
   -webkit-column-gap: 2rem;
+  width: 80%;
 }
 
 .project-list img {
@@ -75,7 +76,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 5px 0;
-  /* gap: 5px; */
 }
 
 .tech-item {
@@ -158,10 +158,10 @@
   }
   
   .project-list {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 5rem;
-    margin-left: -10rem;
+    /* display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    gap: 5rem; */
+    /* margin-left: -10rem; */
     /* width: 100%; */
     /* width: 100%;
     display: grid;
@@ -170,7 +170,7 @@
   }
 
   .project-item {
-    width: 450px;
+    /* width: 450px; */
   }
 
   #projects h2,
@@ -190,10 +190,34 @@
   #right-btn {
     margin: auto 0 auto 5em;
   } */
+
+  .technologies-list {
+    display: flex;
+    gap: 20px;
+  }
 }
 
 @media screen and (min-width: 820px) {
   .project-container {
-    width: 50%;
+    /* width: 50%; */
+  }
+
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .technologies-list {
+    display: grid;
+    grid-template-columns: repeat(3, 0.9fr);
+    gap: 3px;
+  }
+
+  .technologies-list span {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-content: center;
   }
 }

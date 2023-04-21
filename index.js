@@ -12,7 +12,7 @@ const next = document.querySelectorAll('.next');
 const downArrow = document.querySelectorAll('.down-arrow');
 
 window.addEventListener('scroll', () => {
-  header.classList.toggle('sticky', window.scrollY > 10);
+  header.classList.toggle('sticky', window.scrollY > 100);
   console.log('Activated!s');
 });
 

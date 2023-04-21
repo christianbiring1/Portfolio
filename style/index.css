@@ -288,6 +288,11 @@ p {
     align-items: center;
   }
 
+  .header.sticky {
+    background-color: rgba(0, 0, 0, .7);
+    transition: all 1s;
+  }
+
   .nav-bar {
     display: flex;
     align-items: center;
@@ -309,6 +314,10 @@ p {
   .list-item a {
     color: blue;
     font-size: 1.7rem;
+  }
+
+  .header.sticky .list-item a {
+    color: #fff;
   }
 
   .brand {

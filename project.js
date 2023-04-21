@@ -1,7 +1,7 @@
 import projects from './list.js';
 
-const rightBtn = document.getElementById('right-btn');
-const leftBtn = document.getElementById('left-btn');
+// const rightBtn = document.getElementById('right-btn');
+// const leftBtn = document.getElementById('left-btn');
 let closebtn;
 
 /* **************************** RENDER PROJECTS SECTION DYNAMICALLY ************************** */

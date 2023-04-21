@@ -11,6 +11,11 @@ const main = document.querySelector('main');
 const next = document.querySelectorAll('.next');
 const downArrow = document.querySelectorAll('.down-arrow');
 
+window.addEventListener('scroll', () => {
+  header.classList.toggle('sticky', window.scrollY > 10);
+  console.log('Activated!s');
+});
+
 // const darkStyle = {
 //   color: '#fff',
 //   backgroundColor: '#333',
@@ -79,7 +84,6 @@ anchor.forEach((link) => {
     anchor.forEach((link) => link.classList.remove('active'));
     header.classList.remove('active');
     main.classList.toggle('active');
-    // main.style.filter = 'blur(0px)';
   });
 });
 

@@ -71,12 +71,12 @@ const projects = [
   },
 
   {
-    image: './images/To-Do_list.png',
+    image: './images/to_do.png',
     id: 8,
     projectName: 'To Do list',
     stack: ['JavaScript', 'LocalStorage', 'Webpack', 'HTML5', 'CSS3'],
     projectDescription: 'In this project, I had to build a simple HTML list of To Do tasks. The user will be able to create, update and delete (CRUD)the tasks. This simple web page was built using webpack and served by a webpack dev server.',
-    liveDemo: 'https://christianbiring1.github.io/To-Do_list/',
+    liveDemo: 'https://development--stalwart-dango-a6b44a.netlify.app/',
     sourceCode: 'https://github.com/christianbiring1/To-Do_list',
     class: 'todolist',
   },

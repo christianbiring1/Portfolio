@@ -4,7 +4,7 @@
 // const body = document.querySelector('body');
 const anchor = document.querySelectorAll('.list-item');
 const header = document.querySelector('.header');
-const main = document.querySelector('main');
+// const main = document.querySelector('main');
 // const intro = document.querySelectorAll('h1, h2');
 // const paragraphs = document.querySelectorAll('p');
 
@@ -13,7 +13,6 @@ const downArrow = document.querySelectorAll('.down-arrow');
 
 window.addEventListener('scroll', () => {
   header.classList.toggle('sticky', window.scrollY > 100);
-  console.log('Activated!s');
 });
 
 // const darkStyle = {
@@ -73,7 +72,7 @@ hamburger.addEventListener('click', () => {
   brand.classList.toggle('active');
   anchor.forEach((link) => link.classList.toggle('active'));
   header.classList.toggle('active');
-  main.classList.toggle('active');
+  // main.classList.toggle('active');
 });
 
 anchor.forEach((link) => {
@@ -83,7 +82,7 @@ anchor.forEach((link) => {
     brand.classList.remove('active');
     anchor.forEach((link) => link.classList.remove('active'));
     header.classList.remove('active');
-    main.classList.toggle('active');
+    // main.classList.toggle("active");
   });
 });
 

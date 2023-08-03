@@ -10,28 +10,28 @@ const projects = [
     liveDemo: 'https://budget-app-4zi2.onrender.com',
     sourceCode: 'https://github.com/christianbiring1/Budget_App',
     class: 'budjetApp',
-    anime: 'flip-left'
+    anime: 'flip-left',
   },
 
   {
-    image: './images/Covid-App.png',
-    id: 2,
-    projectName: 'Covid-19 App',
-    stack: ['ReactJS', 'Redux', 'Covid API', 'CSS'],
-    projectDescription: 'This project is about building a mobile web application to check a list of metrics (numeric values) that I had to create making use of React and Redux. I have selected an API that provides numeric data about a the covid-19 views case in the world per country then build the webapp around it',
-    liveDemo: 'https://glittering-centaur-5e199f.netlify.app',
-    sourceCode: 'https://github.com/christianbiring1/metrics-webapp',
-    class: 'covidApp',
-  },
-  {
     image: './images/space_traveler.png',
-    id: 3,
+    id: 2,
     projectName: 'Space_traveler',
     stack: ['ReactJS', 'SCSS', 'JSX'],
     projectDescription: 'In this project, I have worked with the real live data from the SpaceX API to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
     liveDemo: 'https://fancy-elf-c0882d.netlify.app/',
     sourceCode: 'https://github.com/christianbiring1/space_traveler',
     class: 'space_traveler',
+  },
+  {
+    image: './images/Covid-App.png',
+    id: 3,
+    projectName: 'Covid-19#Metrics',
+    stack: ['ReactJS', 'Redux', 'Covid API', 'CSS'],
+    projectDescription: 'This project is about building a mobile web application to check a list of metrics (numeric values) that I had to create making use of React and Redux. I have selected an API that provides numeric data about a the covid-19 views case in the world per country then build the webapp around it',
+    liveDemo: 'https://glittering-centaur-5e199f.netlify.app',
+    sourceCode: 'https://github.com/christianbiring1/metrics-webapp',
+    class: 'covidApp',
   },
 
   {

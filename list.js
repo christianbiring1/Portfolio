@@ -61,7 +61,7 @@ const projects = [
 
   {
     image: './images/leader-board.png',
-    id: 7,
+    id: 5,
     projectName: 'Leader board',
     stack: ['JavaScript', 'API', 'Webpack', 'HTML5', 'CSS3'],
     projectDescription: 'In this activity I had to set up the project for the Leaderboard list app, using webpack and ES6 features, notably modules. I had to develop the version of the app following a wireframe',
@@ -72,7 +72,7 @@ const projects = [
 
   {
     image: './images/to_do.png',
-    id: 8,
+    id: 6,
     projectName: 'To Do list',
     stack: ['JavaScript', 'LocalStorage', 'Webpack', 'HTML5', 'CSS3'],
     projectDescription: 'In this project, I had to build a simple HTML list of To Do tasks. The user will be able to create, update and delete (CRUD)the tasks. This simple web page was built using webpack and served by a webpack dev server.',
@@ -83,7 +83,7 @@ const projects = [
 
   {
     image: './images/Genuine-charity.png',
-    id: 9,
+    id: 7,
     projectName: 'Genuine Charity',
     stack: ['JavaScript', 'HTML5', 'CSS3'],
     projectDescription: 'This project I have built was based on an online website for a conference. I have been provided some design guidelines to create the website, but I have personalized the content, and some features, i.e, instead of a conference web App I have built a website for charity and care.',

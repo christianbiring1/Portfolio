@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGithub, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa'
 
-function Hero(props) {
+function Hero() {
   return (
     <div className='hero-container' >
       <h1>Christian Biringanine</h1>

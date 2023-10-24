@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import AOS from 'aos';
 import Hero from './components/hero';
 import 'aos/dist/aos.css'
-import './App.css'
+import './App.scss'
 
 function App() {
 

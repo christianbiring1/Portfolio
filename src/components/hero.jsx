@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+// import React from 'react';
+// import { Link } from 'react-router-dom';
 import profil from "../assets/chris.jpg";
 import { FaGithub, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa'
 
@@ -20,6 +20,9 @@ function Hero() {
           <FaInstagram size={30} color='#d62976' />
           <FaTwitter size={30} color='#00acee' />
           <FaLinkedin size={30} color='#0077b5' />
+        </div>
+        <div className="cta">
+          <button>Hire me</button>
         </div>
       </div>
     </div>

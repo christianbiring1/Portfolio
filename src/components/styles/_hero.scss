@@ -7,6 +7,7 @@
   // clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
   // background-color: #555252;
   padding: 1rem;
+  margin: 5rem auto 2rem;
 
   .hero_image {
     width: 270px;
@@ -31,6 +32,22 @@
     display: flex;
     gap: 0.7rem;
   }
+
+  .cta {
+    margin-top: 3rem;
+    text-align: center;
+
+    button {
+      padding: 1.3rem 1rem;
+      font-size: 1.6rem;
+      border-radius: 3rem;
+      width: 50%;
+      background: $color-secondary;
+      border: 1px solid $color-secondary;
+      color: #171515;
+      cursor: pointer;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -38,7 +55,7 @@
     flex-direction: row-reverse;
     justify-content: center;
     width: 80%;
-    margin: 10rem auto 2rem;
+    margin: 15rem auto 2rem;
     gap: 2rem;
 
     h1 {
@@ -68,6 +85,12 @@
           opacity: 1;
           cursor: pointer;
         }
+      }
+    }
+
+    .cta {
+      button {
+        width: 20%;
       }
     }
   }

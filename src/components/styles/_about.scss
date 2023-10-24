@@ -1,0 +1,123 @@
+.about_container {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 1rem;
+  gap: 5rem;
+  // justify-content: center;
+  // align-items: center;
+
+  .details {
+    font-size: 2rem;
+  }
+
+  p {
+    color: #333;
+  }
+
+  .experience {
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  .company {
+    margin-bottom: 2rem;
+    padding: .5rem 1rem 2rem;
+    border-bottom: 2px solid #e3e3ff;
+    cursor: pointer;
+  
+    .period {
+      font-size: 1.2rem;
+      font-weight: 500;
+      opacity: 0.8;
+      
+      .date {
+        text-transform: uppercase;
+      }
+
+      span {
+        display: inline-block;
+
+        &:last-of-type {
+          font-size: 1.15rem;
+          padding: .5rem 1rem 0;
+        }
+      }
+    }
+
+    .title {
+      margin-bottom: 1rem;
+      span {
+        display: inline-block;
+      }
+      .position{
+        color: #333;
+        padding: 0 .5rem;
+      }
+      .company_name {
+        opacity: 0.5;
+        font-weight: 500;
+        padding: 0 .5rem;
+      }
+    }
+
+    .description {
+      opacity: .5;
+    }
+
+        .stack_list {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1rem;
+          margin-top: 1rem;
+    
+          .stack_name {
+            color: lighten($color: $color-headings, $amount: 10);
+            background-color: rgba(0, 0, 0, .15);
+            font-size: 1.4rem;
+            border-radius: 3rem;
+            padding: .2rem 0.7rem;
+          }
+        }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about_container {
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .details {
+      padding-top: 15rem;
+
+      p {
+        opacity: .7;
+        font-size: 1.8rem;
+      }
+    }
+
+    .company {
+      display: grid;
+      grid-template-columns: 0.5fr 1fr;
+      font-size: 1.6rem;
+      border: 1px solid #e3e3ff;
+      border-radius: 1rem;
+      padding: 3rem 2rem;
+      margin-bottom: 3rem;
+
+      .description {
+        color: $color-body;
+        opacity: 1;
+        padding: .5rem 1rem 1rem;
+      }
+    }
+
+    .company:hover {
+      border: 1px solid transparent;
+      background-color: rgba(227, 227, 255, 0.6);
+    }
+  }
+}

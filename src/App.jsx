@@ -1,8 +1,9 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react'; //eslint-disable-line
 import AOS from 'aos';
+import NavBar from './components/navBar';
 import Hero from './components/hero';
 import About from './components/about';
-import NavBar from './components/navBar';
+import Contact from './components/contact';
 import 'aos/dist/aos.css'
 import './App.scss'
 
@@ -24,6 +25,9 @@ function App() {
       </div>
       <div>
         <About />
+      </div>
+      <div>
+        <Contact />
       </div>
     </>
   )

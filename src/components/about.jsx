@@ -1,3 +1,4 @@
+import React from "react"; //eslint-disable-line
 import { PiSuitcaseSimple, PiLampLight } from "react-icons/pi";
 import { IoBookOutline } from "react-icons/io5";
 

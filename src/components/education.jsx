@@ -1,3 +1,5 @@
+import React from "react"; //eslint-disable-line
+
 import { IoLocationSharp } from "react-icons/io5";
 
 const Education = () => {

@@ -1,4 +1,5 @@
-// import React from 'react';
+import React from 'react';  //eslint-disable-line
+
 // import { Link } from 'react-router-dom';
 import profil from "../assets/chris.jpg";
 import { FaGithub, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa'

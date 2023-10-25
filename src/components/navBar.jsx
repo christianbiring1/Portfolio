@@ -1,4 +1,5 @@
 import { useState } from "react";
+import React from "react"; //eslint-disable-line
 import hamburger from "../assets/hamburger-menu-96.png";
 
 const NavBar = () => {

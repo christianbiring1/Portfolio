@@ -8,7 +8,7 @@ import Education from "./education";
 const About = () => {
   
   return (
-    <div className="about_container">
+    <div className="about_container" id="about" >
       <div className="details">
         <h3>About</h3>
         <p>

@@ -1,8 +1,9 @@
 import { PiSuitcaseSimple, PiLampLight } from "react-icons/pi";
-import { IoLocationSharp, IoBookOutline } from "react-icons/io5";
+import { IoBookOutline } from "react-icons/io5";
 
 import Experience from "./experience";
 import Skills from "./skills";
+import Education from "./education";
 
 const About = () => {
   
@@ -41,6 +42,9 @@ const About = () => {
           <span><IoBookOutline  size={30}/></span>
           <span>Education</span>
         </h3>
+        <div className="education_wrapper">
+          <Education />
+        </div>
       </div>
     </div>
   );

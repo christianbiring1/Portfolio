@@ -23,7 +23,7 @@
   .company {
     margin-bottom: 2rem;
     padding: .5rem 1rem 2rem;
-    border-bottom: 2px solid #e3e3ff;
+    border-bottom: 1.5px solid #e3e3ff;
     cursor: pointer;
   
     .period {
@@ -148,8 +148,6 @@
       display: grid;
       grid-template-columns: 0.5fr 1fr;
       font-size: 1.6rem;
-      border: 1px solid #e3e3ff;
-      border-radius: 1rem;
       padding: 3rem 2rem;
       margin-bottom: 3rem;
 
@@ -159,10 +157,19 @@
         padding: .5rem 1rem 1rem;
       }
     }
+  }
 
-    .company:hover {
+  .company.experience {
+    border: 1px solid #e3e3ff;
+    border-radius: 1rem;
+
+    &:hover {
       border: 1px solid transparent;
       background-color: #e3e3ff99;
     }
+  }
+
+  .education {
+    margin-top: 20rem;
   }
 }

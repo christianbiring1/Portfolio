@@ -36,33 +36,33 @@ const Experience = () => {
   return (
     <>
       {exp.map(item => (
-            <div className="company" key={item.id}>
-              <div className="period">
-                <span className="date" >{item.period}</span>
-                <span>
-                  <IoLocationSharp />
-                  {item.location}
-                </span>
-              </div>
-              <div className="work__details">
-                <div className="title">
-                  <h4 className="">
-                    <span className="position">{item.position}</span>
-                    <span>.</span>
-                    <span className="company_name" >{item.company}</span>
-                  </h4>
-                </div>
-                <div className="description">
-                  {item.description}
-                </div>
-                <div className="stack_list">
-                  {item.stacks.map(stack => (
-                      <span className="stack_name"key={stack} >{stack}</span>
-                  ))}
-                </div>
-              </div>
+        <div className="company experience" key={item.id}>
+          <div className="period">
+            <span className="date" >{item.period}</span>
+            <span>
+              <IoLocationSharp />
+              {item.location}
+            </span>
+          </div>
+          <div className="work__details">
+            <div className="title">
+              <h4 className="">
+                <span className="position">{item.position}</span>
+                <span>.</span>
+                <span className="company_name" >{item.company}</span>
+              </h4>
             </div>
-          ))}
+            <div className="description">
+              {item.description}
+            </div>
+            <div className="stack_list">
+              {item.stacks.map(stack => (
+                  <span className="stack_name"key={stack} >{stack}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
     </>
   );
 }

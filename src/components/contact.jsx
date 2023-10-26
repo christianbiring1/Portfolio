@@ -1,6 +1,5 @@
 import React, { useState } from "react"; //eslint-disable-line;
 import Joi from "joi-browser";
-import { IoMail, IoLocationSharp } from "react-icons/io5";
 import { BsFillSendFill, BsCheckCircleFill } from "react-icons/bs";
 
 
@@ -64,7 +63,7 @@ const Contact = () => {
   const { name, email, message } = visitor;
 
   return (
-    <div className="contact_container">
+    <div className="contact_container" id="contact">
       <div className="interest">
           <h2>Contact Me</h2>
           <p>

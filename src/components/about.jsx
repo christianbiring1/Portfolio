@@ -1,6 +1,7 @@
 import React from "react"; //eslint-disable-line
 import { PiSuitcaseSimple, PiLampLight } from "react-icons/pi";
 import { IoBookOutline } from "react-icons/io5";
+import { IoMail, IoLocationSharp } from "react-icons/io5";  //eslint-disable-line
 
 import Experience from "./experience";
 import Skills from "./skills";
@@ -19,6 +20,24 @@ const About = () => {
           every day as a developer and professional. with alove for clean code and accessible design.
           I am addicted to programming and remote work and capable of ramping up quickly and efficiently.
         </p>
+
+        {/* <div className="details-contact">
+          <div className="">
+            <span>
+              <IoLocationSharp />
+            </span>
+            <span>Kigali, KG 762 St</span>
+          </div>
+          <div className="">
+            <span>
+            </span>
+            <span>
+              <a href="christianbiringanine22@gmail.com">
+              <IoMail />
+              </a>
+            </span>
+          </div>
+        </div> */}
       </div>
       <div className="experience">
         <h3 className="title">
@@ -27,6 +46,7 @@ const About = () => {
         </h3>
         <div className="experience_item">
           <Experience />
+          <a href="/chris_Resume.pdf" target="_blank">View Full Résumé</a>
         </div>
       </div>
       <div className="skills" data-aos="fade-up" data-aos-duration="3000">

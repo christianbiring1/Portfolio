@@ -44,8 +44,49 @@
       width: 50%;
       background: $color-secondary;
       border: 1px solid $color-secondary;
-      color: #171515;
       cursor: pointer;
+      animation: wiggle 2s linear infinite;
+      a {
+        color: #171515;
+        text-decoration: none;
+      }
+
+      &:hover {
+        background-color: lighten($color: $color-secondary, $amount: 10);
+      }
+    }
+
+    @keyframes wiggle {
+
+      0%,
+      7% {
+        transform: rotate(0);
+      }
+
+      15% {
+        transform: rotateZ(-15deg);
+      }
+
+      20% {
+        transform: rotateZ(10deg);
+      }
+
+      25% {
+        transform: rotateZ(-10deg);
+      }
+
+      30% {
+        transform: rotateZ(6deg);
+      }
+
+      35% {
+        transform: rotateZ(-4deg);
+      }
+
+      40%,
+      100% {
+        transform: rotateZ(0);
+      }
     }
   }
 }

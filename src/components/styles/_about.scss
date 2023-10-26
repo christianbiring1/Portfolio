@@ -20,6 +20,30 @@
     gap: 1rem;
   }
 
+  .experience {
+    .experience_item a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.6rem;
+      opacity: .8;
+      transition: all .5s;
+
+      &::after {
+        content: '-->';
+        margin-left: 5px;
+        transition: all .5s;
+      }
+
+      &:hover {
+        opacity: 1;
+        &::after {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+
   .company {
     margin-bottom: 2rem;
     padding: .5rem 1rem 2rem;

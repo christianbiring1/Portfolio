@@ -1,6 +1,4 @@
 import React from 'react';  //eslint-disable-line
-
-// import { Link } from 'react-router-dom';
 import profil from "../assets/chris.jpg";
 import { FaGithub, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa'
 
@@ -23,7 +21,9 @@ function Hero() {
           <FaLinkedin size={30} color='#0077b5' />
         </div>
         <div className="cta">
-          <button>Hire me</button>
+          <button>
+            <a href="/#contact">Hire me</a>
+          </button>
         </div>
       </div>
     </div>

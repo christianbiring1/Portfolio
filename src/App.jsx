@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'; //eslint-disable-line
+import { Route, BrowserRouter as Router } from "react-router-dom"; //eslint-disable-line
 import AOS from 'aos';
 import NavBar from './components/navBar';
 import Hero from './components/hero';
@@ -16,10 +17,10 @@ function App() {
   
 
   return (
-    <>
-    <div className="menu">
-      <NavBar />
-    </div>
+    <Router>
+      <div className="menu">
+        <NavBar />
+      </div>
       <div data-aos="fade-up" data-aos-duration="3000">
         <Hero />
       </div>
@@ -29,7 +30,7 @@ function App() {
       <div data-aos="fade-right" data-aos-duration="1000">
         <Contact />
       </div>
-    </>
+    </Router>
   )
 }
 

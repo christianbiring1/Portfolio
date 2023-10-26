@@ -1,5 +1,8 @@
 .nav {
-  // background-color: #333;
+  background-color: rgba(52, 152, 219, 0.5);
+  // background-image: linear-gradient(rgba(52, 152, 219, 0.7), rgba(52, 152, 219, 0.7));
+  // backdrop-filter: blur(10px);
+  // filter: blur(10px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,6 +13,11 @@
   left: 0;
   right: 0;
   z-index: 999;
+
+  h1 {
+    margin: 0;
+    font-size: 4.4rem;
+  }
 
   a {
     text-decoration: none;

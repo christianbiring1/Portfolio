@@ -41,7 +41,7 @@
   input::placeholder,
   textarea::placeholder {
     font-size: 1.4rem;
-    opacity: .7;
+    opacity: .9;
   }
 
   .form-text,
@@ -55,5 +55,24 @@
     align-items: center;
     height: 4.8rem;
     width: 5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact_container {
+    width: 60%;
+    margin: 5rem auto 0;
+
+    .interest {
+      text-align: center;
+      p {
+        margin-top: 3rem;
+      }
+    }
+
+    form {
+      width: 80%;
+      margin: 0 auto;
+    }
   }
 }

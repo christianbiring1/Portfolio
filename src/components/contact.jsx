@@ -101,7 +101,7 @@ const Contact = () => {
               placeholder="Enter your Email"
               onChange={handleChange}
             />
-            <div id="emailHelp" className="form-text">Your Email will never be shared with anyone else.</div>
+            {/* <div id="emailHelp" className="form-text">Your Email will never be shared with anyone else.</div> */}
             {allErrors.email && <small className="text-danger fw-light">{allErrors.email}</small> }
           </div>
           <div className="input-container">

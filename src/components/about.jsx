@@ -10,7 +10,7 @@ const About = () => {
   
   return (
     <div className="about_container" id="about" >
-      <div className="details">
+      <div className="details" data-aos="fade-up" data-aos-duration="2500">
         <h3>About</h3>
         <p>
           Software Developer, coming from an Electrical technology background with a first-class 
@@ -29,7 +29,7 @@ const About = () => {
           <Experience />
         </div>
       </div>
-      <div className="skills">
+      <div className="skills" data-aos="fade-up" data-aos-duration="3000">
         <h3 className="title" >
           <span><PiLampLight /></span>
           <span>Skills</span>
@@ -38,7 +38,7 @@ const About = () => {
             <Skills />
           </div>
       </div>
-      <div className="education">
+      <div className="education" data-aos="fade-up" data-aos-duration="3000">
         <h3 className="title">
           <span><IoBookOutline  size={30}/></span>
           <span>Education</span>

@@ -26,7 +26,7 @@ function App() {
       <div>
         <About />
       </div>
-      <div>
+      <div data-aos="fade-right" data-aos-duration="1000">
         <Contact />
       </div>
     </>

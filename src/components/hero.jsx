@@ -15,14 +15,22 @@ function Hero() {
         </div>
         <p>I build accessible, inclusive products and digital experiences for the web.</p>
         <div className="socials">
-          <FaGithub  size={30} color='#171515'/>
-          <FaInstagram size={30} color='#d62976' />
-          <FaTwitter size={30} color='#00acee' />
-          <FaLinkedin size={30} color='#0077b5' />
+          <a href="https://github.com/christianbiring1" target="_blank" rel="noopener noreferrer">
+            <FaGithub  size={30} color='#171515'/>
+          </a>
+          <a href="https://www.instagram.com/christian__bir/" target="_blank" rel="noopener noreferrer">
+            <FaInstagram size={30} color='#d62976' />
+          </a>
+          <a href="https://twitter.com/Christianbirin4" target="_blank" rel="noopener noreferrer">
+            <FaTwitter size={30} color='#00acee' />
+          </a>
+          <a href="https://www.linkedin.com/in/christian-biringanine/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin size={30} color='#0077b5' />
+          </a>
         </div>
         <div className="cta">
           <button>
-            <a href="/#contact">Hire me</a>
+            <a href="#contact">Hire me</a>
           </button>
         </div>
       </div>

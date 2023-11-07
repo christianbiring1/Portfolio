@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "private": true,
+  "homepage": "https://christianbiring1.github.io/Portfolio",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

@@ -6,6 +6,7 @@ const Experience = () => {
   const exp = [
     {
       id: 1,
+      url: 'https://ai.thinchealth.co',
       company: 'ThincHealth',
       location: 'Australia, Remote',
       position: 'Software Developer',
@@ -15,6 +16,7 @@ const Experience = () => {
     },
     {
       id: 2,
+      url: 'https://www.microverse.org',
       company: 'Microverse',
       location: 'USA, Remote',
       position: 'TS Engineer',
@@ -25,6 +27,7 @@ const Experience = () => {
     },
     {
       id: 3,
+      url: 'https://www.microverse.org',
       company: 'Microverse',
       location: 'USA, Remote',
       position: 'Student Mentor',
@@ -38,7 +41,7 @@ const Experience = () => {
   return (
     <>
       {exp.map(item => (
-        <div className="company experience" key={item.id}>
+        <a href={item.url} target="_blank" className="company experience" key={item.id} rel="noreferrer">
           <div className="period">
             <span className="date" >{item.period}</span>
             <span>
@@ -51,7 +54,8 @@ const Experience = () => {
               <h4 className="">
                 <span className="position">{item.position}</span>
                 <span>.</span>
-                <span className="company_name" >{item.company}</span>
+                <span className="company_name">{item.company}</span>
+                <span className="arrow">--{">"}</span>
               </h4>
             </div>
             <div className="description">
@@ -63,7 +67,7 @@ const Experience = () => {
               ))}
             </div>
           </div>
-        </div>
+        </a>
       ))}
     </>
   );

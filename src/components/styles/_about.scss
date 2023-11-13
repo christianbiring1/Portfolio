@@ -21,7 +21,11 @@
   }
 
   .experience {
-    .experience_item a {
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .see-more {
       color: #333;
       text-decoration: none;
       font-weight: 600;
@@ -85,24 +89,38 @@
       }
     }
 
+    .arrow {
+      transform: rotate(-45deg);
+      font-size: 1.8rem;
+      display: inline-block;
+      color: #666;
+    }
+
     .description {
       opacity: .5;
     }
 
-        .stack_list {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 1rem;
-          margin-top: 1rem;
-    
-          .stack_name {
-            color: lighten($color: $color-headings, $amount: 10);
-            background-color: rgba(0, 0, 0, .15);
-            font-size: 1.4rem;
-            border-radius: 3rem;
-            padding: .2rem 0.7rem;
-          }
-        }
+    .stack_list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+
+      .stack_name {
+        color: lighten($color: $color-headings, $amount: 10);
+        background-color: rgba(0, 0, 0, .15);
+        font-size: 1.4rem;
+        border-radius: 3rem;
+        padding: .2rem 0.7rem;
+      }
+    }
+
+    // &:hover {
+    //   .arrow {
+    //     position: relative;
+    //     top: -10px;
+    //   }
+    // }
   }
   // SKILLS SECTION
 

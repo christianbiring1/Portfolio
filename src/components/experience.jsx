@@ -20,7 +20,7 @@ const Experience = () => {
       company: 'Microverse',
       location: 'USA, Remote',
       position: 'TS Engineer',
-      period: 'September - August 2023',
+      period: 'Sept 2022 - October 2023',
       description: `Ensuring the quality of source code and conducting code and UI reviews.
       Proposed improvements to code organization to improve code quality`,
       stacks: ['HTML5','CSS3', 'JavaScript', 'React', 'Ruby', 'Ruby on rails', 'PostgreSQL']

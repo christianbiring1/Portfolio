@@ -53,6 +53,7 @@
     padding: .5rem 1rem 2rem;
     border-bottom: 1.5px solid #e3e3ff;
     cursor: pointer;
+    transition: transform .5s;
   
     .period {
       font-size: 1.2rem;
@@ -115,12 +116,9 @@
       }
     }
 
-    // &:hover {
-    //   .arrow {
-    //     position: relative;
-    //     top: -10px;
-    //   }
-    // }
+    &:hover {
+      transform: scale(1.02);
+    }
   }
   // SKILLS SECTION
 

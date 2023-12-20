@@ -125,10 +125,11 @@
   .front-end,
   .back-end {
     margin: 2rem 0;
-    border: 2px solid #e3e3ff;
+    border: 1px solid #e3e3ff;
     padding: 1.5rem;
     border-radius: 20px;
-    background-color: #e3e3ff99;
+    // background-color: #e3e3ff99;
+    background-color: rgba(217, 217, 217, .4);
 
     &:hover {
       cursor: grab;

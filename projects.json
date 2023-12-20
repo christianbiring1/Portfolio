@@ -1,7 +1,21 @@
 [
   {
-    "image": "./images/budgetapp.png",
+    "image": "./src/assets/hospisync.png",
     "id": 1,
+    "projectName": "HospiSync",
+    "stack": [
+      "NodeJS",
+      "MongoDB",
+      "React",
+      "MUI"
+    ],
+    "projectDescription": "This project is about building web application where hospitals can manage their stuffs: patients, staff, finances and more",
+    "liveDemo": "https://github.com/christianbiring1/hospiSync",
+    "sourceCode": "https://github.com/christianbiring1/hospiSync"
+  },
+  {
+    "image": "./src/assets/budget-photo.png",
+    "id": 3,
     "projectName": "Budget App",
     "stack": [
       "Ruby on Rails",
@@ -11,12 +25,10 @@
     ],
     "projectDescription": "This project is about building web application where users can manage their budget: they have a list of transactions associated with a category, so that they can see how much money they spent and on what.",
     "liveDemo": "https://budget-app-4zi2.onrender.com",
-    "sourceCode": "https://github.com/christianbiring1/Budget_App",
-    "class": "budjetApp",
-    "anime": "flip-left"
+    "sourceCode": "https://github.com/christianbiring1/Budget_App"
   },
   {
-    "image": "./images/space_traveler.png",
+    "image": "./src/assets/space-traveler.png",
     "id": 2,
     "projectName": "Space_traveler",
     "stack": [
@@ -30,7 +42,7 @@
     "class": "space_traveler"
   },
   {
-    "image": "./images/Covid-App.png",
+    "image": "./src/assets/metrics.png",
     "id": 3,
     "projectName": "Covid-19#Metrics",
     "stack": [
@@ -45,7 +57,7 @@
     "class": "covidApp"
   },
   {
-    "image": "./images/bookstore-react.png",
+    "image": "./src/assets/bookstore.png",
     "id": 4,
     "projectName": "BookStore",
     "stack": [
@@ -57,21 +69,7 @@
     "sourceCode": "https://github.com/christianbiring1/bookstore"
   },
   {
-    "image": "./images/leader-board.png",
-    "id": 5,
-    "projectName": "Leader board",
-    "stack": [
-      "JavaScript",
-      "Webpack",
-      "HTML5",
-      "CSS3"
-    ],
-    "projectDescription": "In this activity I had to set up the project for the Leaderboard list app, using webpack and ES6 features, notably modules. I had to develop the version of the app following a wireframe",
-    "liveDemo": "https://christianbiring1.github.io/Leaderboard/",
-    "sourceCode": "https://github.com/christianbiring1/Leaderboard"
-  },
-  {
-    "image": "./images/to_do.png",
+    "image": "./src/assets/todo.png",
     "id": 6,
     "projectName": "To Do list",
     "stack": [
@@ -86,7 +84,7 @@
     "sourceCode": "https://github.com/christianbiring1/To-Do_list"
   },
   {
-    "image": "./images/Genuine-charity.png",
+    "image": "./src/assets/genuine-charity.png",
     "id": 7,
     "projectName": "Genuine Charity",
     "stack": [

@@ -1,10 +1,9 @@
-import React from 'react';
+import React from 'react'; //eslint-disable-line
 import { FaEye, FaLaptopCode } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import required modules
 import { Keyboard, Pagination, Navigation } from 'swiper/modules';
 
-import chris from '../assets/chris.jpg';
 import projects from '../../projects.json';
 
 import 'swiper/css';
@@ -31,7 +30,7 @@ const Projects = () => {
         {projects.map(el => (
           <SwiperSlide key={el.id}>
             <div className='project_content'>
-              <img src={chris} alt={`${el.projectName}_photo`} />
+              <img src={el.image} alt={`${el.projectName}_photo`} />
               <div className="details">
                 <h2 className='title' >{el.projectName}</h2>
                 <div className="description">{el.projectDescription}</div>

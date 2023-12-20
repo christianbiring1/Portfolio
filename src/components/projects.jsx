@@ -1,5 +1,5 @@
 import React from 'react'; //eslint-disable-line
-import { FaEye, FaLaptopCode } from 'react-icons/fa';
+import { FaEye, FaLaptopCode, FaToolbox } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import required modules
 import { Keyboard, Pagination, Navigation } from 'swiper/modules';
@@ -13,7 +13,11 @@ import 'swiper/css/navigation';
 
 const Projects = () => {
   return (
-    <div className='project_container'>
+    <div className='project_container' id='projects'>
+      <h3 className="title">
+        <span><FaToolbox size={30} /></span>
+        <span>Project</span>
+      </h3>
       <Swiper
         slidesPerView={1}
         spaceBetween={30}

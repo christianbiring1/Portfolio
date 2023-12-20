@@ -11,13 +11,18 @@
   background-color: rgba(217, 217, 217, .4);
   border-radius: 2rem;
   height: 40rem;
-  
-  .details {
-  }
 
   .description {
     margin-top: 3rem;
   }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .stack_list {

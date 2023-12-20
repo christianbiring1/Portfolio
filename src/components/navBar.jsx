@@ -16,7 +16,7 @@ const NavBar = () => {
       <ul className="nav_list collapsible__content">
         <li className="nav__item"><a href="/" className="nav_link">Home</a></li>
         <li className="nav__item"><a href="#about" className="nav_link">About</a></li>
-        <li className="nav__item"><a href="" className="nav_link">Projects</a></li>
+        <li className="nav__item"><a href="#projects" className="nav_link">Projects</a></li>
         <li className="nav__item"><a href="#contact" className="nav_link">Contact</a></li>
       </ul>
     </nav>

@@ -33,7 +33,7 @@
       "ReactJS",
       "react-confetti"
     ],
-    "projectDescription": "This project is about building web application Game where users can play the dice game just for fun. They will be able to keep of the time it took 'em to complete the game and No. of times they roll to get the correct number. Thay will be able to beat their record as well.",
+    "projectDescription": "Web application Game where users can play the dice game just for fun. They will be able to keep of the time it took 'em to complete the game and No. of times they roll to get the correct number. Thay will be able to beat their record as well.",
     "liveDemo": "https://glowing-donut-fcb7c8.netlify.app",
     "sourceCode": "https://github.com/christianbiring1/hospiSync"
   },
@@ -76,7 +76,7 @@
       "Bootstrap",
       "CSS"
     ],
-    "projectDescription": "This project is about building web application where users can manage their budget: they have a list of transactions associated with a category, so that they can see how much money they spent and on what.",
+    "projectDescription": "Is web application where users can manage their budget: they have a list of transactions associated with a category, so that they can see how much money they spent and on what.",
     "liveDemo": "https://budget-app-4zi2.onrender.com",
     "sourceCode": "https://github.com/christianbiring1/Budget_App"
   },
@@ -118,7 +118,7 @@
       "HTML5",
       "CSS3"
     ],
-    "projectDescription": "In this project, I had to build a simple HTML list of To Do tasks. The user will be able to create, update and delete (CRUD)the tasks. This simple web page was built using webpack and served by a webpack dev server.",
+    "projectDescription": "A simple To Do app where users will be able to add, edit and delete their created todos list.",
     "liveDemo": "https://development--stalwart-dango-a6b44a.netlify.app/",
     "sourceCode": "https://github.com/christianbiring1/To-Do_list"
   },
@@ -131,7 +131,7 @@
       "HTML5",
       "CSS3"
     ],
-    "projectDescription": "This project I have built was based on an online website for a conference. I have been provided some design guidelines to create the website, but I have personalized the content, and some features, i.e, instead of a conference web App I have built a website for charity and care.",
+    "projectDescription": "Genuine Charity website to enhance their presence online, where user can find latest news, infos and how to contribute in the organization",
     "liveDemo": "https://christianbiring1.github.io/Capstone_project-module1/",
     "sourceCode": "https://github.com/christianbiring1/Capstone_project-module1"
   }

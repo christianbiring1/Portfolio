@@ -1,10 +1,11 @@
-import React from 'react'; //eslint-disable-line
+import React, { useRef, useState } from 'react'; //eslint-disable-line
 import { FaEye, FaLaptopCode, FaToolbox } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import required modules
 import { Keyboard, Pagination, Navigation } from 'swiper/modules';
 
 import projects from '../../projects.json';
+import { UseOnClickOutSide } from '../utils/useOnClick';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -12,6 +13,22 @@ import 'swiper/css/navigation';
 
 
 const Projects = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const ref = useRef();
+
+  UseOnClickOutSide(ref, isOpen, handleIsOpen);
+
+  function handleIsOpen() {
+    setIsOpen(!isOpen);
+  }
+
+
+  const handleModal = (e, url) => {
+    if (!url) {
+      e.preventDefault();
+      handleIsOpen()
+    }
+  }
   return (
     <div className='project_container' id='projects'>
       <h3 className="title">
@@ -44,7 +61,7 @@ const Projects = () => {
                   ))}
                 </ul>
                 <div className="bottom_cta">
-                  <a href={el.liveDemo} target="_blank" rel="noopener noreferrer"><FaEye  size={25}/></a>
+                  <a href={el.liveDemo} target="_blank" rel="noopener noreferrer" onClick={(e) => handleModal(e, el.liveDemo)} ><FaEye  size={25}/></a>
                   <a href={el.sourceCode} target="_blank" rel="noopener noreferrer"><FaLaptopCode size={25}/></a>
                   {el.sourceCode2 && <a href={el.sourceCode2} target="_blank" rel="noopener noreferrer"><FaLaptopCode size={25}/></a> }
                 </div>
@@ -53,6 +70,8 @@ const Projects = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+
+      {isOpen && <h1 ref={ref}>I m open man</h1>}
     </div>
   );
 }

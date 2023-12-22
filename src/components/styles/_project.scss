@@ -30,7 +30,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin: 3rem 1rem;
+  margin: 1rem;
 }
 
 .stack_name {
@@ -85,3 +85,20 @@
 // .swiper-button {
 //   margin-top: 20px;
 // }
+
+@media screen and (max-width: 768px) {
+  .project_content {
+    flex-direction: column;
+
+    .description {
+      margin-top: 0;
+    }
+  }
+
+  .stack_list {
+    justify-content: center;
+  }
+  // .title {
+  //   margin-bottom: 0;
+  // }
+}

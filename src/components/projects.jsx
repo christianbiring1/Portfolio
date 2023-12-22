@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Keyboard, Pagination, Navigation } from 'swiper/modules';
 import { Modal } from 'react-responsive-modal';
 
-import projects from '../../projects.json';
+import projects from '../../projectsList';
 // import { UseOnClickOutSide } from '../utils/useOnClick';
 
 import 'swiper/css';

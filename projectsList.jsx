@@ -1,6 +1,7 @@
 import fout from "./src/assets/fout.png";
 import spacetraveler from "./src/assets/space-traveler.png";
 import dice from "./src/assets/dice.png";
+import voty from "./src/assets/voty.png";
 import bookstore from "./src/assets/bookstore.png";
 import budget from "./src/assets/budget-photo.png";
 import genuine from "./src/assets/genuine-charity.png";
@@ -62,7 +63,7 @@ export default [
     sourceCode: "https://github.com/christianbiring1/hospiSync"
   },
   {
-    image: dice,
+    image: voty,
     id: 5,
     projectName: "E voty",
     stack: [

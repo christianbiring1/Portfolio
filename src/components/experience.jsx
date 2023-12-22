@@ -8,7 +8,7 @@ const Experience = () => {
       id: 1,
       url: 'https://ai.thinchealth.co',
       company: 'ThincHealth',
-      location: 'Australia, Remote',
+      location: ' Remote, AU',
       position: 'Software Developer',
       period: 'August 2023 - Present',
       description: `Work alongside the Engineering team to develop software for digital health and AI adoption.`,
@@ -18,7 +18,7 @@ const Experience = () => {
       id: 2,
       url: 'https://www.microverse.org',
       company: 'Microverse',
-      location: 'USA, Remote',
+      location: ' Remote, US',
       position: 'TS Engineer',
       period: 'Sept 2022 - October 2023',
       description: `Ensuring the quality of source code and conducting code and UI reviews.
@@ -29,7 +29,7 @@ const Experience = () => {
       id: 3,
       url: 'https://www.microverse.org',
       company: 'Microverse',
-      location: 'USA, Remote',
+      location: ' Remote, US',
       position: 'Student Mentor',
       period: 'April - October 2022',
       description: `Mentored junior web developers, providing technical support through code reviews.

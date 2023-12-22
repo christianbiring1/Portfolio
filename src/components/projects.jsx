@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'; //eslint-disable-line
-import { FaEye, FaLaptopCode, FaToolbox } from 'react-icons/fa';
-import { BsEmojiSmileUpsideDownFill } from 'react-icons/bs';
+import { FaEye, FaLaptopCode, FaToolbox, FaTools } from 'react-icons/fa';
+import { BsGear } from 'react-icons/bs'
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import required modules
 import { Keyboard, Pagination, Navigation } from 'swiper/modules';
@@ -80,11 +80,14 @@ const Projects = () => {
                     modalAnimationIn: 'inModal',
                     modal: 'modal',
                   }}
-                  animationDuration={200}
+                  animationDuration={500}
                 >
                   <div className="modal-container">
                     <h2 className='top-head'>Oups!</h2>
-                    <BsEmojiSmileUpsideDownFill  size={100} color='#ffde34' className='spin-icon' />
+                    <div className="icons">
+                      <BsGear size={100} color='#999' className='spin-icon'/>
+                      <FaTools size={100} color='#c5070799' />
+                    </div>
                     <div className="details">
                     <p>This project still under development...</p>
                     <p>

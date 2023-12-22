@@ -113,6 +113,8 @@
         color: $color-body;
         display: inline-block;
         margin: 0 1rem;
+        border: none;
+        outline: none;
 
         &:hover {
           color: $color-headings;

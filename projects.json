@@ -1,7 +1,45 @@
 [
   {
-    "image": "./src/assets/hospisync.png",
+    "image": "./src/assets/fout.png",
     "id": 1,
+    "projectName": "Font Out",
+    "stack": [
+      "React",
+      "TailWind",
+      "Google Fonts API"
+    ],
+    "projectDescription": "This project is about building a web application where developers can customize the Font they wanna use and get the output properties they can later copy to their codebase",
+    "liveDemo": "",
+    "sourceCode": "https://github.com/christianbiring1/Font_out"
+  },
+  {
+    "image": "./src/assets/space-traveler.png",
+    "id": 2,
+    "projectName": "Space Traveler",
+    "stack": [
+      "ReactJS",
+      "Redux",
+      "SCSS"
+    ],
+    "projectDescription": "In this project, I have worked with the real live data from the SpaceX API to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.",
+    "liveDemo": "https://fancy-elf-c0882d.netlify.app/",
+    "sourceCode": "https://github.com/christianbiring1/space_traveler"
+  },
+  {
+    "image": "./src/assets/dice.png",
+    "id": 3,
+    "projectName": "Dice Game",
+    "stack": [
+      "ReactJS",
+      "react-confetti"
+    ],
+    "projectDescription": "This project is about building web application Game where users can play the dice game just for fun. They will be able to keep of the time it took 'em to complete the game and No. of times they roll to get the correct number. Thay will be able to beat their record as well.",
+    "liveDemo": "https://glowing-donut-fcb7c8.netlify.app",
+    "sourceCode": "https://github.com/christianbiring1/hospiSync"
+  },
+  {
+    "image": "./src/assets/hospisync.png",
+    "id": 4,
     "projectName": "HospiSync",
     "stack": [
       "NodeJS",
@@ -10,12 +48,27 @@
       "MUI"
     ],
     "projectDescription": "This project is about building web application where hospitals can manage their stuffs: patients, staff, finances and more",
-    "liveDemo": "https://github.com/christianbiring1/hospiSync",
+    "liveDemo": "",
     "sourceCode": "https://github.com/christianbiring1/hospiSync"
   },
   {
+    "image": "./src/assets/space-traveler.png",
+    "id": 2,
+    "projectName": "E voty",
+    "stack": [
+      "MongoDB",
+      "Express",
+      "ReactJS",
+      "NodeJS"
+    ],
+    "projectDescription": "This project is about building web application where users can choose a candidate who's running for a specific election after logging with their ID",
+    "liveDemo": "",
+    "sourceCode": "https://github.com/christianbiring1/fictional-octo-waddle",
+    "sourceCode2": "https://github.com/christianbiring1/vote_api"
+  },
+  {
     "image": "./src/assets/budget-photo.png",
-    "id": 3,
+    "id": 5,
     "projectName": "Budget App",
     "stack": [
       "Ruby on Rails",
@@ -28,22 +81,8 @@
     "sourceCode": "https://github.com/christianbiring1/Budget_App"
   },
   {
-    "image": "./src/assets/space-traveler.png",
-    "id": 2,
-    "projectName": "Space_traveler",
-    "stack": [
-      "ReactJS",
-      "Redux",
-      "SCSS"
-    ],
-    "projectDescription": "In this project, I have worked with the real live data from the SpaceX API to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.",
-    "liveDemo": "https://fancy-elf-c0882d.netlify.app/",
-    "sourceCode": "https://github.com/christianbiring1/space_traveler",
-    "class": "space_traveler"
-  },
-  {
     "image": "./src/assets/metrics.png",
-    "id": 3,
+    "id": 6,
     "projectName": "Covid-19#Metrics",
     "stack": [
       "ReactJS",
@@ -58,7 +97,7 @@
   },
   {
     "image": "./src/assets/bookstore.png",
-    "id": 4,
+    "id": 7,
     "projectName": "BookStore",
     "stack": [
       "React",
@@ -70,7 +109,7 @@
   },
   {
     "image": "./src/assets/todo.png",
-    "id": 6,
+    "id": 8,
     "projectName": "To Do list",
     "stack": [
       "JavaScript",
@@ -85,7 +124,7 @@
   },
   {
     "image": "./src/assets/genuine-charity.png",
-    "id": 7,
+    "id": 9,
     "projectName": "Genuine Charity",
     "stack": [
       "JavaScript",

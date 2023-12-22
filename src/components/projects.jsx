@@ -44,8 +44,9 @@ const Projects = () => {
                   ))}
                 </ul>
                 <div className="bottom_cta">
-                  <a href={el.liveDemo} target="_blank" rel="noopener noreferrer"><FaEye  size={30}/></a>
-                  <a href={el.sourceCode} target="_blank" rel="noopener noreferrer"><FaLaptopCode size={30}/></a>
+                  <a href={el.liveDemo} target="_blank" rel="noopener noreferrer"><FaEye  size={25}/></a>
+                  <a href={el.sourceCode} target="_blank" rel="noopener noreferrer"><FaLaptopCode size={25}/></a>
+                  {el.sourceCode2 && <a href={el.sourceCode2} target="_blank" rel="noopener noreferrer"><FaLaptopCode size={25}/></a> }
                 </div>
               </div>
             </div>

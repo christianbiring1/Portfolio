@@ -53,7 +53,7 @@
   },
   {
     "image": "./src/assets/space-traveler.png",
-    "id": 2,
+    "id": 5,
     "projectName": "E voty",
     "stack": [
       "MongoDB",
@@ -68,7 +68,7 @@
   },
   {
     "image": "./src/assets/budget-photo.png",
-    "id": 5,
+    "id": 6,
     "projectName": "Budget App",
     "stack": [
       "Ruby on Rails",
@@ -82,7 +82,7 @@
   },
   {
     "image": "./src/assets/metrics.png",
-    "id": 6,
+    "id": 7,
     "projectName": "Covid-19#Metrics",
     "stack": [
       "ReactJS",
@@ -97,7 +97,7 @@
   },
   {
     "image": "./src/assets/bookstore.png",
-    "id": 7,
+    "id": 8,
     "projectName": "BookStore",
     "stack": [
       "React",
@@ -109,7 +109,7 @@
   },
   {
     "image": "./src/assets/todo.png",
-    "id": 8,
+    "id": 9,
     "projectName": "To Do list",
     "stack": [
       "JavaScript",
@@ -124,7 +124,7 @@
   },
   {
     "image": "./src/assets/genuine-charity.png",
-    "id": 9,
+    "id": 10,
     "projectName": "Genuine Charity",
     "stack": [
       "JavaScript",

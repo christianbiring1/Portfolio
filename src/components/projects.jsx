@@ -7,7 +7,7 @@ import { Keyboard, Pagination, Navigation } from 'swiper/modules';
 import { Modal } from 'react-responsive-modal';
 
 import projects from '../../projects.json';
-import { UseOnClickOutSide } from '../utils/useOnClick';
+// import { UseOnClickOutSide } from '../utils/useOnClick';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -15,21 +15,25 @@ import 'swiper/css/navigation';
 
 
 const Projects = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const ref = useRef();
+  // const [isOpen, setIsOpen] = useState(false);
+  // const ref = useRef();
+  const [activeIndex, setActiveIndex] = useState(null);
 
-  UseOnClickOutSide(ref, isOpen, handleIsOpen);
+  // UseOnClickOutSide(ref, isOpen, handleIsOpen);
 
-  function handleIsOpen() {
-    setIsOpen(!isOpen);
-  }
+  // function handleIsOpen() {
+  //   setIsOpen(!isOpen);
+  // }
 
-
-  const handleModal = (e, url) => {
+  const handleModal = (e, url, index) => {
     if (!url) {
       e.preventDefault();
-      handleIsOpen()
+      setActiveIndex(index)
     }
+  }
+
+  const handleCloseModal = () => {
+    setActiveIndex(null)
   }
   return (
     <div className='project_container' id='projects'>
@@ -50,7 +54,7 @@ const Projects = () => {
         modules={[Keyboard, Pagination, Navigation]}
         className="mySwiper"
       >
-        {projects.map(el => (
+        {projects.map((el, index) => (
             <SwiperSlide key={el.id}>
               <div className='project_content'>
                 <img src={el.image} alt={`${el.projectName}_photo`} />
@@ -63,29 +67,28 @@ const Projects = () => {
                     ))}
                   </ul>
                   <div className="bottom_cta">
-                    <a href={el.liveDemo} target="_blank" rel="noopener noreferrer" onClick={(e) => handleModal(e, el.liveDemo)} ><FaEye  size={25}/></a>
+                    <a href={el.liveDemo} target="_blank" rel="noopener noreferrer" onClick={(e) => handleModal(e, el.liveDemo, index)} ><FaEye  size={25}/></a>
                     <a href={el.sourceCode} target="_blank" rel="noopener noreferrer"><FaLaptopCode size={25}/></a>
                     {el.sourceCode2 && <a href={el.sourceCode2} target="_blank" rel="noopener noreferrer"><FaLaptopCode size={25}/></a> }
                   </div>
                 </div>
                 <Modal
-                  open={isOpen}
-                  onClose={handleIsOpen}
+                  open={activeIndex === index}
+                  onClose={handleCloseModal}
                   center
                   classNames={{
                     modalAnimationIn: 'inModal',
                     modal: 'modal',
-                    overlay: 'overlay'
                   }}
                   animationDuration={200}
                 >
                   <div className="modal-container">
                     <h2 className='top-head'>Oups!</h2>
-                    <BsEmojiSmileUpsideDownFill  size={100} color='#ffde34'/>
+                    <BsEmojiSmileUpsideDownFill  size={100} color='#ffde34' className='spin-icon' />
                     <div className="details">
-                    <p>This project is still under development!...</p>
+                    <p>This project still under development...</p>
                     <p>
-                      However you can check the source
+                      You can check the source code
                       <a href={el.sourceCode} target="_blank" rel="noopener noreferrer"><FaLaptopCode size={25}/></a>
                       {el.sourceCode2 && <a href={el.sourceCode2} target="_blank" rel="noopener noreferrer"><FaLaptopCode size={25}/></a> }
                     </p>

@@ -20,7 +20,7 @@ export default [
       "Google Fonts API"
     ],
     projectDescription: "This project is about building a web application where developers can customize the Font they wanna use and get the output properties they can later copy to their codebase",
-    liveDemo: "",
+    liveDemo: "https://silver-nougat-d7e1fc.netlify.app/",
     sourceCode: "https://github.com/christianbiring1/Font_out"
   },
   {

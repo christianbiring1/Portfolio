@@ -1,4 +1,5 @@
-import React from "react"; //eslint-disable-line
+import React from "react"; //eslint-disable-line;
+import { useTranslation } from "react-i18next";
 import { PiSuitcaseSimple, PiLampLight } from "react-icons/pi";
 import { IoBookOutline } from "react-icons/io5";
 import { IoMail, IoLocationSharp } from "react-icons/io5";  //eslint-disable-line
@@ -8,18 +9,13 @@ import Skills from "./skills";
 import Education from "./education";
 
 const About = () => {
+  const { t } = useTranslation();
   
   return (
     <div className="about_container" id="about" >
       <div className="details" data-aos="fade-up" data-aos-duration="2500">
-        <h3>About</h3>
-        <p>
-          Software Developer, coming from an Electrical technology background with a first-class 
-          honor degree; I’m familiar with the sort of fast-paced, intense environment found in a lot
-          of Software industries, problem-solving skills, effective communication, and more I now use
-          every day as a developer and professional. with a love for clean code and accessible design.
-          I am addicted to programming and remote work and capable of ramping up quickly and efficiently.
-        </p>
+        <h3>{t('aboutTitle')}</h3>
+        <p>{t('about')}</p>
 
         {/* <div className="details-contact">
           <div className="">
@@ -42,7 +38,7 @@ const About = () => {
       <div className="experience">
         <h3 className="title">
           <span><PiSuitcaseSimple  size={30}/></span>
-          <span>Experience</span>
+          <span>{t('experience')}</span>
         </h3>
         <div className="experience_item">
           <Experience />
@@ -52,7 +48,7 @@ const About = () => {
       <div className="skills" data-aos="fade-up" data-aos-duration="3000">
         <h3 className="title" >
           <span><PiLampLight /></span>
-          <span>Skills</span>
+          <span>{t('skills')}</span>
         </h3>
           <div className="skills-wrapper">
             <Skills />
@@ -61,7 +57,7 @@ const About = () => {
       <div className="education" data-aos="fade-up" data-aos-duration="3000">
         <h3 className="title">
           <span><IoBookOutline  size={30}/></span>
-          <span>Education</span>
+          <span>{t('education')}</span>
         </h3>
         <div className="education_wrapper">
           <Education />

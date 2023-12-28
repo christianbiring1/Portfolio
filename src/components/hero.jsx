@@ -15,10 +15,10 @@ function Hero() {
       </div>
       <div className="hero_intro">
         <div className="header">
-          <h1 >{t('welcome')}</h1>
-          <h3>Full Stack Software Developer</h3>
+          <h1 >Christian Biringanine</h1>
+          <h3>{t('title')}</h3>
         </div>
-        <p>I build accessible, inclusive products and digital experiences for the web.</p>
+        <p>{t('pitch')}</p>
         <div className="socials">
           <a href="https://github.com/christianbiring1" target="_blank" rel="noopener noreferrer">
             <FaGithub  size={30} color='#171515'/>
@@ -35,7 +35,7 @@ function Hero() {
         </div>
         <div className="cta">
           <button>
-            <a href="#contact">Hire me</a>
+            <a href="#contact">{t('cta')}</a>
           </button>
         </div>
       </div>

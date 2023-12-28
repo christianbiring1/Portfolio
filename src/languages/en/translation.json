@@ -1,4 +1,17 @@
 {
-  "welcome": "Welcome to my portfolio",
-  "about": "About Me"
+  "home": "Home",
+  "project": "Projects",
+  "navcta": "Contact",
+  "title": "Full Stack Software Developer",
+  "pitch": "I build accessible, inclusive products and digital experiences for the web.",
+  "cta": "Hire me",
+  "aboutTitle": "About",
+  "about": "Software Developer, coming from an Electrical technology background with a first-class honor degree; I m familiar with the sort of fast-paced, intense environment found in a lot of Software industries, problem-solving skills, effective communication, and more I now use every day as a developer and professional. with a love for clean code and accessible design. I am addicted to programming and remote work and capable of ramping up quickly and efficiently.",
+  "experience": "Experience",
+  "skills": "Skills",
+  "education": "Education",
+  "contact": "Contact Me",
+  "contactCta": "If you have an application you are intersted in developing, a feature that you need built or a project that needs coding. I'd love to help with it.",
+  "name": "Name",
+  "email": "Enter your Email"
 }

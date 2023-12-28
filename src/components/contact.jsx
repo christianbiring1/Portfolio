@@ -1,10 +1,12 @@
 import React, { useState } from "react"; //eslint-disable-line;
 import Joi from "joi-browser";
-import { BsFillSendFill, BsCheckCircleFill } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
+import { BsFillSendFill } from "react-icons/bs";
 
 
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [visitor, setVisitor] = useState({
     name: '',
     email: '',
@@ -65,12 +67,8 @@ const Contact = () => {
   return (
     <div className="contact_container" id="contact">
       <div className="interest">
-          <h2>Contact Me</h2>
-          <p>
-            If you have an application you are intersted in developing, a
-            feature that you need built or a project that needs coding. I'd love
-            to help with it.
-          </p>
+          <h2>{t('contact')}</h2>
+          <p>{t('contactCta')}</p>
         </div>
         <form
           action="https://formspree.io/f/mzbovqko"
@@ -85,7 +83,7 @@ const Contact = () => {
               value={name}
               id="name"
               className="form-control"
-              placeholder="Name"
+              placeholder={t('name')}
               onChange={handleChange}
             />
             {allErrors.name && <small className="text-danger fw-light">{allErrors.name}</small> }
@@ -97,7 +95,7 @@ const Contact = () => {
               value={email}
               className="form-control"
               id="email"
-              placeholder="Enter your Email"
+              placeholder={t('email')}
               onChange={handleChange}
             />
             {/* <div id="emailHelp" className="form-text">Your Email will never be shared with anyone else.</div> */}

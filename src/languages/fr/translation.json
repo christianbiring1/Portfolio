@@ -1,4 +1,17 @@
 {
-  "welcome": "Bienvenue sur mon portfolio",
-  "about": "A propos de moi"
+  "home": "Acceuil",
+  "project": "Projets",
+  "navcta": "Contact",
+  "title": "Développeur Full Stack",
+  "pitch": "Je crée des produits accessibles et inclusifs ainsi que des expériences numériques pour le web.",
+  "cta": "Engagez-moi",
+  "aboutTitle": "À propos",
+  "about": " Développeur de logiciels, issu d'une formation en technologie électrique avec un diplôme de première classe; je suis familier avec le type d'environnement rapide et intense que l'on trouve dans de nombreuses industries du logiciel, des compétences en résolution de problèmes, une communication efficace, et bien plus que j'utilise désormais chaque jour en tant que développeur et professionnel. Avec un amour pour le code propre et le design accessible. Je suis accro à la programmation et au travail à distance et capable de monter en charge rapidement et efficacement.",
+  "experience": "Expérience",
+  "skills": "Compétences",
+  "education": "Éducation",
+  "contact": "Contactez-moi",
+  "contactCta": " Si vous avez une application que vous souhaitez développer, une fonctionnalité que vous avez besoin de construire ou un projet nécessitant du codage. J'adorerais vous aider.",
+  "name": "Nom",
+  "email": "Entrez votre Email"
 }

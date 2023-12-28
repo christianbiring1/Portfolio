@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+
+import LanguageSwitcher from "./switchTrans";
 import hamburger from "../assets/hamburger-menu-96.png";
 
 const NavBar = () => {
@@ -19,6 +21,7 @@ const NavBar = () => {
         <li className="nav__item"><a href="#about" className="nav_link">{t('aboutTitle')}</a></li>
         <li className="nav__item"><a href="#projects" className="nav_link">{t('project')}</a></li>
         <li className="nav__item"><a href="#contact" className="nav_link">{t('navcta')}</a></li>
+        <LanguageSwitcher />
       </ul>
     </nav>
   );

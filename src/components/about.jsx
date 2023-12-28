@@ -42,7 +42,7 @@ const About = () => {
         </h3>
         <div className="experience_item">
           <Experience />
-          <a className="see-more" href="https://drive.google.com/file/d/1eH10d0YoTQ-rZH4NUfNUJEVVHFlDAsuI/view?usp=sharing" target="_blank" rel="noreferer noreferrer">View Full Résumé</a>
+          <a className="see-more" href="https://drive.google.com/file/d/1eH10d0YoTQ-rZH4NUfNUJEVVHFlDAsuI/view?usp=sharing" target="_blank" rel="noreferer noreferrer">{t('viewResume')}</a>
         </div>
       </div>
       <div className="skills" data-aos="fade-up" data-aos-duration="3000">

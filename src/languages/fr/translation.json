@@ -10,8 +10,21 @@
   "experience": "Expérience",
   "skills": "Compétences",
   "education": "Éducation",
+  "viewResume": "Voir le CV complet",
   "contact": "Contactez-moi",
   "contactCta": " Si vous avez une application que vous souhaitez développer, une fonctionnalité que vous avez besoin de construire ou un projet nécessitant du codage. J'adorerais vous aider.",
   "name": "Nom",
-  "email": "Entrez votre Email"
+  "email": "Entrez votre Email",
+  "expLocation1": "À distance, AU",
+  "expPosition1": "Développeur de Logiciels",
+  "expPeriod1": "Août 2023 - Présent",
+  "expDescription1": "Travailler aux côtés de l'équipe d'ingénierie pour développer des logiciels pour la santé numérique et l'adoption de l'IA.",
+  "expLocation2": "À distance, États-Unis",
+  "expPosition2": "Ingénieur de Support Technique",
+  "expPeriod2": "Septembre 2022 - Octobre 2023",
+  "expDescription2": "Garantir la qualité du code source et effectuer des révisions de code et d'interface utilisateur. Proposer des améliorations à l'organisation du code pour améliorer sa qualité.",
+  "expLocation3": "À distance, États-Unis",
+  "expPosition3": "Mentor d'étudiants",
+  "expPeriod3": "Avril - Octobre 2022",
+  "expDescription3": "Encadré des jeunes développeurs web, en leur fournissant un soutien technique grâce à des révisions de code. Donné des conseils et des astuces sur la manière de maintenir la motivation et la longévité dans le programme."
 }

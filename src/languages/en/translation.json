@@ -10,8 +10,21 @@
   "experience": "Experience",
   "skills": "Skills",
   "education": "Education",
+  "viewResume": "View Full Résumé",
   "contact": "Contact Me",
   "contactCta": "If you have an application you are intersted in developing, a feature that you need built or a project that needs coding. I'd love to help with it.",
   "name": "Name",
-  "email": "Enter your Email"
+  "email": "Enter your Email",
+  "expLocation1": "Remote, AU",
+  "expPosition1": "Software Developer",
+  "expPeriod1": "August 2023 - Present",
+  "expDescription1": "Work alongside the Engineering team to develop software for digital health and AI adoption.",
+  "expLocation2": "Remote, US",
+  "expPosition2": "TS Engineer",
+  "expPeriod2": "Sept 2022 - October 2023",
+  "expDescription2": "Ensuring the quality of source code and conducting code and UI reviews. Proposed improvements to code organization to improve code quality",
+  "expLocation3": "Remote, US",
+  "expPosition3": "Student Mentor",
+  "expPeriod3": "April - October 2022",
+  "expDescription3": "Mentored junior web developers, providing technical support through code reviews. Provided advice and tips on how to maintain motivation and longevity in the program"
 }

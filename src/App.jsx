@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'; //eslint-disable-line
 import { Route, BrowserRouter as Router } from "react-router-dom"; //eslint-disable-line
 import AOS from 'aos';
 import NavBar from './components/navBar';
+import LanguageSwitcher from './components/switchTrans';
 import Hero from './components/hero';
 import About from './components/about';
 import Projects from './components/projects';
@@ -22,6 +23,7 @@ function App() {
       <div className="menu">
         <NavBar />
       </div>
+      <div><LanguageSwitcher /></div>
       <div data-aos="fade-up" data-aos-duration="3000">
         <Hero />
       </div>

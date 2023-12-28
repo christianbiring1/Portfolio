@@ -1,8 +1,13 @@
 import React from 'react';  //eslint-disable-line
+import { useTranslation } from 'react-i18next';
 import profil from "../assets/chris.jpg";
 import { FaGithub, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa'
 
+
 function Hero() {
+
+  const { t } = useTranslation();
+
   return (
     <div className='hero-container' >
       <div className="hero_image">
@@ -10,7 +15,7 @@ function Hero() {
       </div>
       <div className="hero_intro">
         <div className="header">
-          <h1 >Christian Biringanine</h1>
+          <h1 >{t('welcome')}</h1>
           <h3>Full Stack Software Developer</h3>
         </div>
         <p>I build accessible, inclusive products and digital experiences for the web.</p>

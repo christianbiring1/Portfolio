@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'; //eslint-disable-line
 import { Route, BrowserRouter as Router } from "react-router-dom"; //eslint-disable-line
+import { Toaster } from 'react-hot-toast';
 import AOS from 'aos';
 import NavBar from './components/navBar';
 import Hero from './components/hero';
@@ -19,6 +20,15 @@ function App() {
 
   return (
     <Router>
+      <Toaster
+        toastOptions={{
+          style: {
+            border: '1px solid #713200',
+            color: '#713200',
+            fontSize: '1.5rem'
+          }
+        }}
+      />
       <div className="menu">
         <NavBar />
       </div>

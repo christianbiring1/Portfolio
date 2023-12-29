@@ -17,9 +17,6 @@ function LanguageSwitcher() {
     });
   };
 
-  console.log(i18n.language)
-
-
   return (
     <div className='translation'>
       <button onClick={() => changeLanguage('en')}><ReactCountryFlag countryCode='GB' svg/><span>en</span></button>

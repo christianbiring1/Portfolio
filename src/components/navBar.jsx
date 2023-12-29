@@ -17,8 +17,9 @@ const NavBar = (props) => {
   }
 
   const stylesIcon = {
-    marginTop: "1rem",
-    color: active ? "666" : "gray"
+    marginTop: "1.3rem",
+    color: active ? "666" : "gray",
+    cursor: "pointer"
   };
 
   const styles= active ? {backgroundColor: '#d9d9d9'} : {};

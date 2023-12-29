@@ -7,6 +7,8 @@ function LanguageSwitcher() {
 
   const changeLanguage = (lng) => {
     const language = lng === 'en' ? 'English' : 'French';
+    const currentLanguage = i18n.language;
+    if(lng === currentLanguage) return;
     
     toast.promise(i18n.changeLanguage(lng), {
       loading: 'Transating...',
@@ -14,6 +16,8 @@ function LanguageSwitcher() {
       error: 'Failed to translate',
     });
   };
+
+  console.log(i18n.language)
 
 
   return (

@@ -14,7 +14,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 
-const Projects = () => {
+const Projects = (props) => {
+  const { active } = props;
   // const [isOpen, setIsOpen] = useState(false);
   // const ref = useRef();
   const [activeIndex, setActiveIndex] = useState(null);
@@ -34,10 +35,12 @@ const Projects = () => {
 
   const handleCloseModal = () => {
     setActiveIndex(null)
-  }
+  };
+
+  const styles = active ? {color: "#d9d9d9"} : {};
   return (
     <div className='project_container' id='projects'>
-      <h3 className="title">
+      <h3 className="title" style={styles}>
         <span><FaToolbox size={30} /></span>
         <span>Project</span>
       </h3>
@@ -53,10 +56,11 @@ const Projects = () => {
         navigation={true}
         modules={[Keyboard, Pagination, Navigation]}
         className="mySwiper"
+        // style={active ? {backgroundColor: "#d9d9d9"} : {}}
       >
         {projects.map((el, index) => (
             <SwiperSlide key={el.id}>
-              <div className='project_content'>
+              <div className='project_content' style={active ? {backgroundColor: "#d9d9d9"} : {}}>
                 <img src={el.image} alt={`${el.projectName}_photo`} />
                 <div className="details">
                   <h2 className='title' >{el.projectName}</h2>

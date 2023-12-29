@@ -3,7 +3,8 @@ import { useTranslation } from "react-i18next";
 import { IoLocationSharp } from "react-icons/io5";
 import translationEng from '../languages/en/translation.json';
 
-const Experience = () => {
+const Experience = (props) => {
+  const { active } = props;
   const { t } = useTranslation();
 
   const exp = [
@@ -39,21 +40,23 @@ const Experience = () => {
     }
   ];
 
+  const styles = active ? {color: "#fff"} : {};
+
   return (
     <>
       {exp.map(item => (
         <a href={item.url} target="_blank" className="company experience" key={item.id} rel="noreferrer">
           <div className="period">
-            <span className="date" >{t(`expPeriod${item.id}`)}</span>
-            <span>
+            <span className="date" style={styles}>{t(`expPeriod${item.id}`)}</span>
+            <span style={styles}>
               <IoLocationSharp />
               {t('expLocation1')}
             </span>
           </div>
-          <div className="work__details">
+          <div className="work__details" >
             <div className="title">
-              <h4 className="">
-                <span className="position">{t(`expPosition${item.id}`)}</span>
+              <h4 className="" style={styles}>
+                <span className="position" style={styles}>{t(`expPosition${item.id}`)}</span>
                 <span>.</span>
                 <span className="company_name">{item.company}</span>
                 <span className="arrow">--{">"}</span>
@@ -64,7 +67,7 @@ const Experience = () => {
             </div>
             <div className="stack_list">
               {item.stacks.map(stack => (
-                  <span className="stack_name"key={stack} >{stack}</span>
+                  <span className="stack_name"key={stack} style={styles}>{stack}</span>
               ))}
             </div>
           </div>

@@ -2,7 +2,10 @@ import React from "react"; //eslint-disable-line
 
 import { IoLocationSharp } from "react-icons/io5";
 
-const Education = () => {
+const Education = (props) => {
+
+  const { active } = props;
+
   const school = [
     {
       id: 1,
@@ -22,21 +25,23 @@ const Education = () => {
     }
   ];
 
+  const styles = active ? {color: "#d9d9d9"} : {};
+
   return (
     <>
       {school.map(item => (
         <div className="company" key={item.id}>
           <div className="period">
-            <span className="date" >{item.period}</span>
-            <span>
+            <span className="date" style={styles} >{item.period}</span>
+            <span style={styles}>
               <IoLocationSharp />
               {item.location}
             </span>
           </div>
           <div className="work__details">
             <div className="title">
-              <h4 className="">
-                <span className="position">{item.position}</span>
+              <h4 className="" style={styles}>
+                <span className="position" style={styles}>{item.position}</span>
                 <span>.</span>
                 <span className="company_name" >{item.company}</span>
               </h4>

@@ -5,7 +5,9 @@ import { BsFillSendFill } from "react-icons/bs";
 
 
 
-const Contact = () => {
+const Contact = (props) => {
+  const {active} = props;
+
   const { t } = useTranslation();
   const [visitor, setVisitor] = useState({
     name: '',
@@ -56,25 +58,28 @@ const Contact = () => {
     });
   }
 
-  // const handleSubmit = () => {
-  //   const errors = validate();
-  //   setAllErrors(errors)
-  // }
+  const handleSubmit = (e) => {
+    const errors = validate();
+    setAllErrors(errors)
+
+    e.preventDefault();
+  }
 
 
   const { name, email, message } = visitor;
+  const styles = active ? {color: "#fff"} : {};
 
   return (
     <div className="contact_container" id="contact">
       <div className="interest">
-          <h2>{t('contact')}</h2>
-          <p>{t('contactCta')}</p>
+          <h2 style={styles}>{t('contact')}</h2>
+          <p style={styles}>{t('contactCta')}</p>
         </div>
         <form
           action="https://formspree.io/f/mzbovqko"
           id="form"
           method="POST"
-          // onSubmit={handleSubmit}
+          onSubmit={handleSubmit}
         >
           <div className="input-container">
             <input
@@ -112,7 +117,7 @@ const Contact = () => {
             />
             {allErrors.message && <small className="text-danger fw-light">{allErrors.message}</small> }
           </div>
-          <button type="submit" disabled={validate()} className="btn btn-primary">
+          <button type="submit" className="btn btn-primary">
             <BsFillSendFill  size={30}/>
           </button>
         </form>

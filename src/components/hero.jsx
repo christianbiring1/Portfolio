@@ -1,10 +1,13 @@
 import React from 'react';  //eslint-disable-line
 import { useTranslation } from 'react-i18next';
-import profil from "../assets/chris.jpg";
 import { FaGithub, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa'
 
+import profil from "../assets/chris.jpg";
 
-function Hero() {
+
+function Hero(props) {
+
+  const { active } = props;
 
   const { t } = useTranslation();
 
@@ -15,8 +18,8 @@ function Hero() {
       </div>
       <div className="hero_intro">
         <div className="header">
-          <h1 >Christian Biringanine</h1>
-          <h3>{t('title')}</h3>
+          <h1 style={active ? {color: '#d9d9d9'} : {}}>Christian Biringanine</h1>
+          <h3 style={active ? {color: 'white'} : {}}>{t('title')}</h3>
         </div>
         <p>{t('pitch')}</p>
         <div className="socials">

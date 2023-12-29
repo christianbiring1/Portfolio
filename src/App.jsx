@@ -26,7 +26,7 @@ function App() {
 
   return (
     <Router>
-      <div style={!isBlackMode ? {backgroundColor: '#fff'} : {backgroundColor: '#000'}}>
+      <div style={isBlackMode ? {backgroundColor: '#333'} : {backgroundColor: '#fff'}}>
       <Toaster
         toastOptions={{
           style: {
@@ -40,16 +40,16 @@ function App() {
           <NavBar active={isBlackMode} onBlackMode={handleMode} />
         </div>
         <div data-aos="fade-up" data-aos-duration="3000">
-          <Hero />
+          <Hero active={isBlackMode} />
         </div>
         <div>
-          <About />
+          <About active={isBlackMode} />
         </div>
         <div>
-          <Projects />
+          <Projects active={isBlackMode} />
         </div>
         <div data-aos="fade-right" data-aos-duration="1000">
-          <Contact />
+          <Contact active={isBlackMode} />
         </div>
       </div>
     </Router>

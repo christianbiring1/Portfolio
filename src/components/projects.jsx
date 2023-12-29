@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // import required modules
 import { Keyboard, Pagination, Navigation } from 'swiper/modules';
 import { Modal } from 'react-responsive-modal';
+import PropsTypes from 'prop-types';
 
 import projects from '../../projectsList';
 // import { UseOnClickOutSide } from '../utils/useOnClick';
@@ -108,6 +109,10 @@ const Projects = (props) => {
       </Swiper>
     </div>
   );
+};
+
+Projects.propTypes = {
+  active: PropsTypes.bool.isRequired
 }
  
 export default Projects;

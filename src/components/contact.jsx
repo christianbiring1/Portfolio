@@ -1,6 +1,7 @@
-import React, { useState } from "react"; //eslint-disable-line;
+import { useState } from "react";
 import Joi from "joi-browser";
 import { useTranslation } from "react-i18next";
+import PropsTypes from "prop-types";
 import { BsFillSendFill } from "react-icons/bs";
 
 
@@ -61,8 +62,7 @@ const Contact = (props) => {
   const handleSubmit = (e) => {
     const errors = validate();
     setAllErrors(errors)
-
-    e.preventDefault();
+    if (errors) e.preventDefault();
   }
 
 
@@ -91,7 +91,7 @@ const Contact = (props) => {
               placeholder={t('name')}
               onChange={handleChange}
             />
-            {allErrors.name && <small className="text-danger fw-light">{allErrors.name}</small> }
+            {allErrors?.name && <small className="text-danger fw-light">{allErrors?.name}</small> }
           </div>
           <div className="input-container">
             <input
@@ -104,7 +104,7 @@ const Contact = (props) => {
               onChange={handleChange}
             />
             {/* <div id="emailHelp" className="form-text">Your Email will never be shared with anyone else.</div> */}
-            {allErrors.email && <small className="text-danger fw-light">{allErrors.email}</small> }
+            {allErrors?.email && <small className="text-danger fw-light">{allErrors?.email}</small> }
           </div>
           <div className="input-container">
             <textarea
@@ -115,7 +115,7 @@ const Contact = (props) => {
               placeholder="Message"
               onChange={handleChange}
             />
-            {allErrors.message && <small className="text-danger fw-light">{allErrors.message}</small> }
+            {allErrors?.message && <small className="text-danger fw-light">{allErrors?.message}</small> }
           </div>
           <button type="submit" className="btn btn-primary">
             <BsFillSendFill  size={30}/>
@@ -123,6 +123,10 @@ const Contact = (props) => {
         </form>
     </div>
   );
+}
+
+Contact.propTypes = {
+  active: PropsTypes.bool.isRequired
 }
  
 export default Contact;

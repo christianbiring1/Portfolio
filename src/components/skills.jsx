@@ -1,4 +1,5 @@
 import  React, { useState } from "react"; //eslint-disable-line
+import PropsTypes from "prop-types";
 import { FaReact, FaNodeJs, FaTools } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -104,6 +105,10 @@ const Skills = (props) => {
       </div>
     </div>
   );
+};
+
+Skills.propTypes = {
+  active: PropsTypes.bool.isRequired
 }
  
 export default Skills;

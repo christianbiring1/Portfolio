@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import PropsTypes from "prop-types";
 
 import { IoLocationSharp } from "react-icons/io5";
 import translationEng from '../languages/en/translation.json';
@@ -75,6 +76,10 @@ const Experience = (props) => {
       ))}
     </>
   );
+};
+
+Experience.propTypes = {
+  active: PropsTypes.bool.isRequired
 }
  
 export default Experience;

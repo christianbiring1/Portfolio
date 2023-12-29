@@ -1,4 +1,5 @@
 import React from "react"; //eslint-disable-line
+import PropTypes from "prop-types";
 
 import { IoLocationSharp } from "react-icons/io5";
 
@@ -54,6 +55,10 @@ const Education = (props) => {
       ))}
     </>
   );
+};
+
+Education.propTypes = {
+  active: PropTypes.bool.isRequired
 }
  
 export default Education;

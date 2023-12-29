@@ -1,4 +1,3 @@
-import React from "react"; //eslint-disable-line;
 import { useTranslation } from "react-i18next";
 import PropsTypes from "prop-types";
 import { PiSuitcaseSimple, PiLampLight } from "react-icons/pi";
@@ -71,7 +70,7 @@ const About = (props) => {
   );
 };
 
-About.prototype = {
+About.propTypes = {
   active: PropsTypes.bool.isRequired
 }
  

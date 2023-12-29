@@ -40,7 +40,7 @@ const NavBar = (props) => {
   );
 }
 
-NavBar.prototype = {
+NavBar.propTypes = {
   active: PropTypes.bool.isRequired,
   onBlackMode: PropTypes.func.isRequired
 }

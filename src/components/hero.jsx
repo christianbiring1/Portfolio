@@ -1,5 +1,6 @@
 import React from 'react';  //eslint-disable-line
 import { useTranslation } from 'react-i18next';
+import PropsTypes from 'prop-types';
 import { FaGithub, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa'
 
 import profil from "../assets/chris.jpg";
@@ -44,6 +45,10 @@ function Hero(props) {
       </div>
     </div>
   );
+}
+
+Hero.propTypes = {
+  active: PropsTypes.bool.isRequired
 }
 
 export default Hero;

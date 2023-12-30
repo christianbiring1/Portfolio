@@ -1,4 +1,5 @@
 import  React, { useState } from "react"; //eslint-disable-line
+import PropsTypes from "prop-types";
 import { FaReact, FaNodeJs, FaTools } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -6,7 +7,9 @@ import { SiExpress, SiRuby, SiRubyonrails, SiMongodb, SiPostgresql, SiFigma } fr
 import { BsDatabaseFillGear } from "react-icons/bs";
 import {IoDesktop } from "react-icons/io5";
 
-const Skills = () => {
+const Skills = (props) => {
+  const { active } = props;
+
   const frontend = [
     {
       id: 1,
@@ -63,11 +66,12 @@ const Skills = () => {
       label: 'Figma',
       icon: <SiFigma  size={30} color="#ae4dff" />
     },
-  ]
+  ];
+  const styles = active ? {color: "#d9d9d9"} : {};
   return (
     <div className="skills_container">
       <div className="front-end">
-        <h3><IoDesktop color="#333" size={20}/> Front-End</h3>
+        <h3 style={styles}><IoDesktop color = {active ? "#d9d9d9" : "#333"} size={20}/> Front-End</h3>
         <div className="front-end-skills">
           {frontend.map(item => (
             <div key={item.id} className="skill_item" >
@@ -78,7 +82,7 @@ const Skills = () => {
         </div>
       </div>
       <div className="back-end">
-        <h3> <BsDatabaseFillGear color="blue"/> Backend</h3>
+        <h3 style={styles}> <BsDatabaseFillGear color={active ? "#d9d9d9" : "blue"}/> Backend</h3>
         <div className="front-end-skills">
           {backend.map(item => (
             <div key={item.id} className="skill_item" >
@@ -89,7 +93,7 @@ const Skills = () => {
         </div>
       </div>
       <div className="back-end">
-        <h3> <FaTools color="#333" /> Tools</h3>
+        <h3 style={styles}> <FaTools color={active ? "#d9d9d9" : "#333"} /> Tools</h3>
         <div className="front-end-skills">
           {tools.map(item => (
             <div key={item.id} className="skill_item" >
@@ -101,6 +105,10 @@ const Skills = () => {
       </div>
     </div>
   );
+};
+
+Skills.propTypes = {
+  active: PropsTypes.bool.isRequired
 }
  
 export default Skills;

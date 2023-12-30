@@ -1,10 +1,11 @@
 import React, { useRef, useState } from 'react'; //eslint-disable-line
-import { FaEye, FaLaptopCode, FaToolbox } from 'react-icons/fa';
-import { BsEmojiSmileUpsideDownFill } from 'react-icons/bs';
+import { FaEye, FaLaptopCode, FaToolbox, FaTools } from 'react-icons/fa';
+import { BsGear } from 'react-icons/bs'
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import required modules
 import { Keyboard, Pagination, Navigation } from 'swiper/modules';
 import { Modal } from 'react-responsive-modal';
+import PropsTypes from 'prop-types';
 
 import projects from '../../projectsList';
 // import { UseOnClickOutSide } from '../utils/useOnClick';
@@ -14,7 +15,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 
-const Projects = () => {
+const Projects = (props) => {
+  const { active } = props;
   // const [isOpen, setIsOpen] = useState(false);
   // const ref = useRef();
   const [activeIndex, setActiveIndex] = useState(null);
@@ -34,10 +36,12 @@ const Projects = () => {
 
   const handleCloseModal = () => {
     setActiveIndex(null)
-  }
+  };
+
+  const styles = active ? {color: "#d9d9d9"} : {};
   return (
     <div className='project_container' id='projects'>
-      <h3 className="title">
+      <h3 className="title" style={styles}>
         <span><FaToolbox size={30} /></span>
         <span>Project</span>
       </h3>
@@ -53,10 +57,11 @@ const Projects = () => {
         navigation={true}
         modules={[Keyboard, Pagination, Navigation]}
         className="mySwiper"
+        // style={active ? {backgroundColor: "#d9d9d9"} : {}}
       >
         {projects.map((el, index) => (
             <SwiperSlide key={el.id}>
-              <div className='project_content'>
+              <div className='project_content' style={active ? {backgroundColor: "#d9d9d9"} : {}}>
                 <img src={el.image} alt={`${el.projectName}_photo`} />
                 <div className="details">
                   <h2 className='title' >{el.projectName}</h2>
@@ -80,11 +85,14 @@ const Projects = () => {
                     modalAnimationIn: 'inModal',
                     modal: 'modal',
                   }}
-                  animationDuration={200}
+                  animationDuration={500}
                 >
                   <div className="modal-container">
                     <h2 className='top-head'>Oups!</h2>
-                    <BsEmojiSmileUpsideDownFill  size={100} color='#ffde34' className='spin-icon' />
+                    <div className="icons">
+                      <BsGear size={100} color='#999' className='spin-icon'/>
+                      <FaTools size={100} color='#c5070799' />
+                    </div>
                     <div className="details">
                     <p>This project still under development...</p>
                     <p>
@@ -101,6 +109,10 @@ const Projects = () => {
       </Swiper>
     </div>
   );
+};
+
+Projects.propTypes = {
+  active: PropsTypes.bool.isRequired
 }
  
 export default Projects;

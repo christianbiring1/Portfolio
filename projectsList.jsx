@@ -1,6 +1,7 @@
 import fout from "./src/assets/fout.png";
 import spacetraveler from "./src/assets/space-traveler.png";
 import dice from "./src/assets/dice.png";
+import voty from "./src/assets/voty.png";
 import bookstore from "./src/assets/bookstore.png";
 import budget from "./src/assets/budget-photo.png";
 import genuine from "./src/assets/genuine-charity.png";
@@ -19,7 +20,7 @@ export default [
       "Google Fonts API"
     ],
     projectDescription: "This project is about building a web application where developers can customize the Font they wanna use and get the output properties they can later copy to their codebase",
-    liveDemo: "",
+    liveDemo: "https://silver-nougat-d7e1fc.netlify.app/",
     sourceCode: "https://github.com/christianbiring1/Font_out"
   },
   {
@@ -29,6 +30,7 @@ export default [
     stack: [
       "ReactJS",
       "Redux",
+      "SpaceX API",
       "SCSS"
     ],
     projectDescription: "In this project, I have worked with the real live data from the SpaceX API to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.",
@@ -55,14 +57,15 @@ export default [
       "NodeJS",
       "MongoDB",
       "React",
-      "MUI"
+      "MUI",
+      "Tailwind"
     ],
     projectDescription: "This project is about building web application where hospitals can manage their stuffs: patients, staff, finances and more",
     liveDemo: "",
     sourceCode: "https://github.com/christianbiring1/hospiSync"
   },
   {
-    image: dice,
+    image: voty,
     id: 5,
     projectName: "E voty",
     stack: [
@@ -93,7 +96,7 @@ export default [
   {
     image: metrics,
     id: 7,
-    projectName: "Covid-19#Metrics",
+    projectName: "Covid-19 Metrics",
     stack: [
       "ReactJS",
       "Redux",

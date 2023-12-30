@@ -1,10 +1,15 @@
-import React, { useState } from "react"; //eslint-disable-line;
+import { useState } from "react";
 import Joi from "joi-browser";
-import { BsFillSendFill, BsCheckCircleFill } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
+import PropsTypes from "prop-types";
+import { BsFillSendFill } from "react-icons/bs";
 
 
 
-const Contact = () => {
+const Contact = (props) => {
+  const {active} = props;
+
+  const { t } = useTranslation();
   const [visitor, setVisitor] = useState({
     name: '',
     email: '',
@@ -54,29 +59,27 @@ const Contact = () => {
     });
   }
 
-  // const handleSubmit = () => {
-  //   const errors = validate();
-  //   setAllErrors(errors)
-  // }
+  const handleSubmit = (e) => {
+    const errors = validate();
+    setAllErrors(errors)
+    if (errors) e.preventDefault();
+  }
 
 
   const { name, email, message } = visitor;
+  const styles = active ? {color: "#fff"} : {};
 
   return (
     <div className="contact_container" id="contact">
       <div className="interest">
-          <h2>Contact Me</h2>
-          <p>
-            If you have an application you are intersted in developing, a
-            feature that you need built or a project that needs coding. I'd love
-            to help with it.
-          </p>
+          <h2 style={styles}>{t('contact')}</h2>
+          <p style={styles}>{t('contactCta')}</p>
         </div>
         <form
           action="https://formspree.io/f/mzbovqko"
           id="form"
           method="POST"
-          // onSubmit={handleSubmit}
+          onSubmit={handleSubmit}
         >
           <div className="input-container">
             <input
@@ -85,10 +88,10 @@ const Contact = () => {
               value={name}
               id="name"
               className="form-control"
-              placeholder="Name"
+              placeholder={t('name')}
               onChange={handleChange}
             />
-            {allErrors.name && <small className="text-danger fw-light">{allErrors.name}</small> }
+            {allErrors?.name && <small className="text-danger fw-light">{allErrors?.name}</small> }
           </div>
           <div className="input-container">
             <input
@@ -97,11 +100,11 @@ const Contact = () => {
               value={email}
               className="form-control"
               id="email"
-              placeholder="Enter your Email"
+              placeholder={t('email')}
               onChange={handleChange}
             />
             {/* <div id="emailHelp" className="form-text">Your Email will never be shared with anyone else.</div> */}
-            {allErrors.email && <small className="text-danger fw-light">{allErrors.email}</small> }
+            {allErrors?.email && <small className="text-danger fw-light">{allErrors?.email}</small> }
           </div>
           <div className="input-container">
             <textarea
@@ -112,14 +115,18 @@ const Contact = () => {
               placeholder="Message"
               onChange={handleChange}
             />
-            {allErrors.message && <small className="text-danger fw-light">{allErrors.message}</small> }
+            {allErrors?.message && <small className="text-danger fw-light">{allErrors?.message}</small> }
           </div>
-          <button type="submit" disabled={validate()} className="btn btn-primary">
+          <button type="submit" className="btn btn-primary">
             <BsFillSendFill  size={30}/>
           </button>
         </form>
     </div>
   );
+}
+
+Contact.propTypes = {
+  active: PropsTypes.bool.isRequired
 }
  
 export default Contact;

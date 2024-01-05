@@ -10,9 +10,12 @@ import Education from "./education";
 
 const About = (props) => {
   const { active } = props;
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const styles = active ? { color: "#d9d9d9"} : {};
+
+  const correctResume = i18n.language === 'en' ? "https://drive.google.com/file/d/13Kl-h-DmAYHMWGJGBFMp2X077RW4_WBx/view?usp=sharing" 
+    : "https://drive.google.com/file/d/1eAzXMUcDrJMnqZPW1nyY2UcHJmPXBoz5/view?usp=sharing";
   
   return (
     <div className="about_container" id="about" >
@@ -45,7 +48,7 @@ const About = (props) => {
         </h3>
         <div className="experience_item">
           <Experience active={active}/>
-          <a className="see-more" style={styles} href="https://drive.google.com/file/d/1eH10d0YoTQ-rZH4NUfNUJEVVHFlDAsuI/view?usp=sharing" target="_blank" rel="noreferer noreferrer">{t('viewResume')}</a>
+          <a className="see-more" style={styles} href={correctResume} target="_blank" rel="noreferer noreferrer">{t('viewResume')}</a>
         </div>
       </div>
       <div className="skills" data-aos="fade-up" data-aos-duration="3000">

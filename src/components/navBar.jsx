@@ -29,10 +29,10 @@ const NavBar = (props) => {
       <a href="/"><h1>CB</h1></a>
       <img src={hamburger} alt="" className="nav__toggler" onClick={handleOpen} />
       <ul className="nav_list collapsible__content">
-        <li className="nav__item"><a href="/" className="nav_link">{t('home')}</a></li>
-        <li className="nav__item"><a href="#about" className="nav_link">{t('aboutTitle')}</a></li>
-        <li className="nav__item"><a href="#projects" className="nav_link">{t('project')}</a></li>
-        <li className="nav__item"><a href="#contact" className="nav_link">{t('navcta')}</a></li>
+        <li className="nav__item"><a href="/" className="nav_link" onClick={handleOpen}>{t('home')}</a></li>
+        <li className="nav__item"><a href="#about" className="nav_link" onClick={handleOpen}>{t('aboutTitle')}</a></li>
+        <li className="nav__item"><a href="#projects" className="nav_link" onClick={handleOpen}>{t('project')}</a></li>
+        <li className="nav__item"><a href="#contact" className="nav_link" onClick={handleOpen}>{t('navcta')}</a></li>
         {!active ? <MdDarkMode onClick={() => onBlackMode()} size={24} style={stylesIcon}/> : <MdLightMode onClick={() => onBlackMode()} size={24} style={stylesIcon}/>}
         <LanguageSwitcher />
       </ul>

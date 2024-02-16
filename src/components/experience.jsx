@@ -11,23 +11,23 @@ const Experience = (props) => {
   const exp = [
     {
       id: 1,
-      url: 'https://ai.thinchealth.co',
-      company: 'ThincHealth',
+      url: 'https://lunahealth.co/consult/',
+      company: 'Luna',
       location: translationEng.expLocation1,
       position: translationEng.expPosition1,
       period: translationEng.expPeriod1,
       description: translationEng.expDescription1,
-      stacks: ['ReactJs','NextJs', 'React Native', 'SEO', 'Google Search Console'],
+      stacks: ['PHP','jQuery', 'cPanel'],
     },
     {
       id: 2,
-      url: 'https://www.microverse.org',
-      company: 'Microverse',
+      url: 'https://ai.thinchealth.co',
+      company: 'ThincHealth',
       location: translationEng.expLocation2,
       position: translationEng.expPosition2,
       period: translationEng.expPeriod2,
       description: translationEng.expDescription2,
-      stacks: ['Git', 'GitHub', 'HTML5','CSS3', 'SCSS', 'Bootstrap','JavaScript', 'React', 'Ruby', 'Ruby on rails', 'PostgreSQL'],
+      stacks: ['ReactJs','NextJs', 'React Native', 'SEO', 'Google Search Console'],
     },
     {
       id: 3,
@@ -37,6 +37,16 @@ const Experience = (props) => {
       position: translationEng.expPosition3,
       period: translationEng.expPeriod3,
       description: translationEng.expDescription3,
+      stacks: ['Git', 'GitHub', 'HTML5','CSS3', 'SCSS', 'Bootstrap','JavaScript', 'React', 'Ruby', 'Ruby on rails', 'PostgreSQL'],
+    },
+    {
+      id: 4,
+      url: 'https://www.microverse.org',
+      company: 'Microverse',
+      location: translationEng.expLocation4,
+      position: translationEng.expPosition4,
+      period: translationEng.expPeriod4,
+      description: translationEng.expDescription4,
       stacks: ['HTML5','CSS3', 'JavaScript', 'React', 'Git', 'Github']
     }
   ];
@@ -51,7 +61,7 @@ const Experience = (props) => {
             <span className="date" style={styles}>{t(`expPeriod${item.id}`)}</span>
             <span style={styles}>
               <IoLocationSharp />
-              {t('expLocation1')}
+              {t(`expLocation${item.id}`)}
             </span>
           </div>
           <div className="work__details" >

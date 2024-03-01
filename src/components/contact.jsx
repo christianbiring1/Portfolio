@@ -76,7 +76,7 @@ const Contact = (props) => {
           <p style={styles}>{t('contactCta')}</p>
         </div>
         <form
-          action="https://formspree.io/f/mzbovqko"
+          action={`https://formspree.io/f/${import.meta.env.VITE_FORMSPREE_ID}`}
           id="form"
           method="POST"
           onSubmit={handleSubmit}

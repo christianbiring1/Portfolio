@@ -69,6 +69,8 @@ const Contact = (props) => {
   const { name, email, message } = visitor;
   const styles = active ? {color: "#fff"} : {};
 
+  const FORMSPREE_ID = process.env.VITE_FORMSPREE_ID || import.meta.env.VITE_FORMSPREE_ID;
+
   return (
     <div className="contact_container" id="contact">
       <div className="interest">
@@ -76,7 +78,7 @@ const Contact = (props) => {
           <p style={styles}>{t('contactCta')}</p>
         </div>
         <form
-          action={`https://formspree.io/f/${import.meta.env.VITE_FORMSPREE_ID}`}
+          action={`https://formspree.io/f/${FORMSPREE_ID}`}
           id="form"
           method="POST"
           onSubmit={handleSubmit}

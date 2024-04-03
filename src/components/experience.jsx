@@ -17,7 +17,7 @@ const Experience = (props) => {
       position: translationEng.expPosition1,
       period: translationEng.expPeriod1,
       description: translationEng.expDescription1,
-      stacks: ['PHP','jQuery', 'cPanel'],
+      stacks: ['React', 'Nodejs', 'Express', 'Firebase', 'PHP','jQuery', 'cPanel'],
     },
     {
       id: 2,

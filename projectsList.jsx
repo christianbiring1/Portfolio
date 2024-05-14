@@ -8,6 +8,7 @@ import genuine from "./src/assets/genuine-charity.png";
 import hospisync from "./src/assets/hospisync.png";
 import metrics from "./src/assets/metrics.png";
 import todo from "./src/assets/todo.png";
+import dashboard from "./src/assets/dashboard.jpg";
 
 export default [
   {
@@ -22,6 +23,20 @@ export default [
     projectDescription: "This project is about building a web application where developers can customize the Font they wanna use and get the output properties they can later copy to their codebase",
     liveDemo: "https://silver-nougat-d7e1fc.netlify.app/",
     sourceCode: "https://github.com/christianbiring1/Font_out"
+  },
+  {
+    image: dashboard,
+    id: 11,
+    projectName: "Dashboard",
+    stack: [
+      "React",
+      "MUI",
+      "TailWind",
+      "Recharts"
+    ],
+    projectDescription: "This project is about building a Admin dashboard of random web app",
+    liveDemo: "https://dashboardui-demo.netlify.app/",
+    sourceCode: "https://github.com/christianbiring1/Dashboardui"
   },
   {
     image: spacetraveler,

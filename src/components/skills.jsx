@@ -3,7 +3,7 @@ import PropsTypes from "prop-types";
 import { FaReact, FaNodeJs, FaTools } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiExpress, SiRuby, SiRubyonrails, SiMongodb, SiPostgresql, SiFigma } from "react-icons/si";
+import { SiExpress, SiRuby, SiRubyonrails, SiMongodb, SiPostgresql, SiFigma, SiMui, SiAntdesign, SiCadillac } from "react-icons/si";
 import { BsDatabaseFillGear } from "react-icons/bs";
 import {IoDesktop } from "react-icons/io5";
 
@@ -26,6 +26,21 @@ const Skills = (props) => {
       label: 'NextJS',
       icon: <TbBrandNextjs size={30}/>,
     },
+    {
+      id: 4,
+      label: 'Material UI',
+      icon: <SiMui size={25}/>
+    },
+    {
+      id: 5,
+      label: 'Ant design',
+      icon: <SiAntdesign size={25}/>
+    },
+    {
+      id: 6,
+      label: 'Chadcn.ui',
+      icon: < SiCadillac size={25}/>
+    }
   ];
   const backend = [
     {
@@ -76,7 +91,7 @@ const Skills = (props) => {
           {frontend.map(item => (
             <div key={item.id} className="skill_item" >
               <span> {item.icon}</span>
-              <span>{item.label}</span>
+              <span style={{ fontFamily: 'Raleway', fontSize: '1.3rem' }}>{item.label}</span>
             </div>
           ))}
         </div>
@@ -87,7 +102,7 @@ const Skills = (props) => {
           {backend.map(item => (
             <div key={item.id} className="skill_item" >
               <span> {item.icon}</span>
-              <span>{item.label}</span>
+              <span style={{ fontFamily: 'Raleway', fontSize: '1.3rem' }}>{item.label}</span>
             </div>
           ))}
         </div>
@@ -98,7 +113,7 @@ const Skills = (props) => {
           {tools.map(item => (
             <div key={item.id} className="skill_item" >
               <span> {item.icon}</span>
-              <span>{item.label}</span>
+              <span style={{ fontFamily: 'Raleway', fontSize: '1.3rem' }}>{item.label}</span>
             </div>
           ))}
         </div>

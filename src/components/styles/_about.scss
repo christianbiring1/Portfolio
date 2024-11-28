@@ -8,6 +8,7 @@
 
   .details {
     font-size: 1.6rem;
+    font-family: 'Raleway';
   }
 
   p {
@@ -102,7 +103,9 @@
 
     .description {
       opacity: .5;
-      font-size: 1.6rem;
+      // font-size: 1.7rem;
+      line-height: 1.5;
+      // font-family: 'Raleway';
     }
 
     .stack_list {
@@ -114,7 +117,8 @@
       .stack_name {
         color: lighten($color: $color-headings, $amount: 10);
         background-color: rgba(0, 0, 0, .15);
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+        font-family: 'Raleway';
         border-radius: 3rem;
         padding: .2rem 0.7rem;
       }

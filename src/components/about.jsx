@@ -14,8 +14,8 @@ const About = (props) => {
 
   const styles = active ? { color: "#d9d9d9"} : {};
 
-  const correctResume = i18n.language === 'en' ? "https://drive.google.com/file/d/13Kl-h-DmAYHMWGJGBFMp2X077RW4_WBx/view?usp=sharing" 
-    : "https://drive.google.com/file/d/1eAzXMUcDrJMnqZPW1nyY2UcHJmPXBoz5/view?usp=sharing";
+  const correctResume = i18n.language === 'en' ? "https://drive.google.com/file/d/1h5VbnW2aSOu-2V0prglyQKe9nAAwtShN/view?usp=sharing" 
+    : "https://drive.google.com/file/d/1h5VbnW2aSOu-2V0prglyQKe9nAAwtShN/view?usp=sharing";
   
   return (
     <div className="about_container" id="about" >

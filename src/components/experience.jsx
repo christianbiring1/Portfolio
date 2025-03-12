@@ -14,7 +14,7 @@ const Experience = (props) => {
   const exp = [
     {
       id: 6,
-      url: "https://e.fiche.rw/",
+      url: "https://efiche.rw/",
       company: "eFiche",
       location: translationEng.expLocation6,
       position: translationEng.expPosition6,

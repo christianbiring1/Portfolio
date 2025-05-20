@@ -8,7 +8,7 @@
 
   .details {
     font-size: 1.6rem;
-    font-family: 'Raleway';
+    font-family: "Raleway";
   }
 
   p {
@@ -31,13 +31,13 @@
       text-decoration: none;
       font-weight: 600;
       font-size: 1.6rem;
-      opacity: .8;
-      transition: all .5s;
+      opacity: 0.8;
+      transition: all 0.5s;
 
       &::after {
-        content: '-->';
+        content: "-->";
         margin-left: 5px;
-        transition: all .5s;
+        transition: all 0.5s;
       }
 
       &:hover {
@@ -51,16 +51,16 @@
 
   .company {
     margin-bottom: 2rem;
-    padding: .5rem 1rem 2rem;
+    padding: 0.5rem 1rem 2rem;
     border-bottom: 1.5px solid #e3e3ff;
     cursor: pointer;
-    transition: transform .5s;
-  
+    transition: transform 0.5s;
+
     .period {
       font-size: 1.2rem;
       font-weight: 500;
       opacity: 0.8;
-      
+
       .date {
         text-transform: uppercase;
         font-size: 1.1rem;
@@ -71,7 +71,7 @@
 
         &:last-of-type {
           font-size: 1.15rem;
-          padding: .5rem 1rem 0;
+          padding: 0.5rem 1rem 0;
         }
       }
     }
@@ -81,16 +81,16 @@
       span {
         display: inline-block;
       }
-      .position{
+      .position {
         color: #333;
-        padding: 0 .5rem;
+        padding: 0 0.5rem;
         font-size: 2rem;
         // letter-spacing: 0.5;
       }
       .company_name {
         opacity: 0.5;
         font-weight: 500;
-        padding: 0 .5rem;
+        padding: 0 0.5rem;
       }
     }
 
@@ -102,10 +102,10 @@
     }
 
     .description {
-      opacity: .5;
-      // font-size: 1.7rem;
-      line-height: 1.5;
-      // font-family: 'Raleway';
+      opacity: 0.5;
+      font-size: 1.5rem;
+      line-height: 1.8;
+      font-family: "Raleway";
     }
 
     .stack_list {
@@ -116,17 +116,17 @@
 
       .stack_name {
         color: lighten($color: $color-headings, $amount: 10);
-        background-color: rgba(0, 0, 0, .15);
+        background-color: rgba(0, 0, 0, 0.15);
         font-size: 1.3rem;
-        font-family: 'Raleway';
+        font-family: "Raleway";
         border-radius: 3rem;
-        padding: .2rem 0.7rem;
+        padding: 0.2rem 0.7rem;
       }
     }
 
     &:hover {
       // transform: scale(1.02);
-      transition: background-color .5s;
+      transition: background-color 0.5s;
     }
   }
   // SKILLS SECTION
@@ -138,7 +138,7 @@
     padding: 1.5rem;
     border-radius: 20px;
     // background-color: #e3e3ff99;
-    background-color: rgba(217, 217, 217, .4);
+    background-color: rgba(217, 217, 217, 0.4);
 
     &:hover {
       cursor: grab;
@@ -150,8 +150,8 @@
     }
   }
   .front-end-skills {
-   display: flex;
-   flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .skill_item {
@@ -166,7 +166,7 @@
     align-items: center;
     justify-content: center;
     font-size: 1.4rem;
-    opacity: .7;
+    opacity: 0.7;
 
     &:hover {
       background-color: #e3e3ff99;
@@ -175,9 +175,6 @@
     }
   }
 }
-
-
-
 
 @media screen and (min-width: 1024px) {
   .about_container {
@@ -189,7 +186,7 @@
       padding-top: 15rem;
 
       p {
-        opacity: .7;
+        opacity: 0.7;
         font-size: 1.8rem;
       }
     }
@@ -204,7 +201,7 @@
       .description {
         color: $color-body;
         opacity: 1;
-        padding: .5rem 1rem 1rem;
+        padding: 0.5rem 1rem 1rem;
       }
     }
   }

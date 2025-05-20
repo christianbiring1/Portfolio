@@ -1,0 +1,54 @@
+.carouselWrapper {
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.heading {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.swiper {
+  padding-bottom: 3rem; // Space for arrows
+  font-family: "Raleway";
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: -1rem; // Pull up under swiper
+  position: relative;
+  z-index: 1;
+}
+
+.prevButton,
+.nextButton {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #f3f3f3;
+  }
+
+  &.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}

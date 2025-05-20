@@ -1,21 +1,35 @@
 .project_container {
-  width: 80%;
+  width: 100%;
   margin: 4rem auto;
-  font-family: 'Raleway';
+  font-family: "Raleway";
+
+  @media screen and (min-width: 768px) {
+    width: 80%;
+  }
 }
 
 .project_content {
-  display: flex;
+  // display: flex;
+  // align-items: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  padding: 0 2rem;
   align-items: center;
   font-size: 1.6rem;
   color: #666;
-  background-color: rgba(217, 217, 217, .4);
+  background-color: rgba(217, 217, 217, 0.4);
   border-radius: 2rem;
   height: 45rem;
   cursor: grab;
 
   .description {
     margin-top: 3rem;
+    font-size: 1.4rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -23,7 +37,7 @@
   display: flex;
   align-items: center;
   font-weight: 900;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   gap: 1rem;
   justify-content: center;
   margin-bottom: 2rem;
@@ -39,12 +53,12 @@
 
 .stack_name {
   color: lighten($color: $color-headings, $amount: 10);
-  background-color: rgba(0, 0, 0, .15);
+  background-color: rgba(0, 0, 0, 0.15);
   font-size: 1.4rem;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 700;
   border-radius: 3rem;
-  padding: .2rem .7rem;
+  padding: 0.2rem 0.7rem;
   list-style: none;
 }
 
@@ -75,60 +89,63 @@
   font-size: 2.5rem;
   background: #fff;
   /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .swiper-slide img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: none;
+  width: 100%;
+  height: auto;
+  // object-fit: cover;
+  margin: 1rem auto;
+
+  @media screen and (min-width: 768px) {
     display: block;
-    width: 50%;
-    height: auto;
-    object-fit: cover;
-    margin: 1rem auto;
   }
+}
 
-  .spin-icon {
-    animation: rotate 8s linear infinite;
+.spin-icon {
+  animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
   }
-
-  @keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
   }
+}
 
-  .modal {
-    border-radius: 1rem;
-    height: 50%;
-    box-shadow: none;
-  }
+.modal {
+  border-radius: 1rem;
+  height: 50%;
+  box-shadow: none;
+}
 
-  .modal-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 
-    .details {
-      color: #666;
-      a {
-        color: $color-body;
-        display: inline-block;
-        margin: 0 1rem;
-        border: none;
-        outline: none;
+  .details {
+    color: #666;
+    a {
+      color: $color-body;
+      display: inline-block;
+      margin: 0 1rem;
+      border: none;
+      outline: none;
 
-        &:hover {
-          color: $color-headings;
-        }
+      &:hover {
+        color: $color-headings;
       }
-
     }
   }
+}
 
 @keyframes inModal {
   0% {

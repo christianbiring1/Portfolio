@@ -6,11 +6,12 @@
   padding: 3rem 2rem;
   border-top-left-radius: 10rem;
   // color: #fff;
+  font-family: "Raleway";
 
   .interest {
     // color: $color-body;
     margin: 2rem 0 5rem;
-    opacity: .7;
+    opacity: 0.7;
 
     h2 {
       text-align: center;
@@ -19,7 +20,7 @@
       font-size: 3.7rem;
     }
   }
-  
+
   .input-container {
     margin-bottom: 3rem;
   }
@@ -27,7 +28,7 @@
   input {
     height: 4.4rem;
     font-size: 1.6rem;
-    opacity: .8;
+    opacity: 0.8;
     padding: 1rem;
     border: 1.8px solid #6666664d;
   }
@@ -35,20 +36,20 @@
   textarea {
     padding: 1rem;
     font-size: 1.7rem;
-    opacity: .8;
+    opacity: 0.8;
     border: 1.8px solid #6666664d;
   }
 
   input::placeholder,
   textarea::placeholder {
     font-size: 1.4rem;
-    opacity: .9;
+    opacity: 0.9;
   }
 
   .form-text,
   small {
     font-size: 1.3rem;
-    opacity: .9;
+    opacity: 0.9;
   }
 
   button {

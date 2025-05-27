@@ -33,7 +33,7 @@ export default [
     stack: ["React", "Redux@toolkit", "scss"],
     projectDescription:
       "Smart Elimu is a web application where schools can manage their educational system including classes, students, the staff and their finances",
-    liveDemo: "https://silver-nougat-d7e1fc.netlify.app/",
+    liveDemo: "https://smartelimu.vercel.app/",
     sourceCode: "",
   },
   {
